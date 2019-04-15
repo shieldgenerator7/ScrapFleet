@@ -6,10 +6,15 @@ public class CardGenerator : MonoBehaviour
 {
     [Header("Stats")]
     public bool pilot;
+    [Range(0,5)]
     public int accuracy;
+    [Range(0, 5)]
     public int fireRate;
+    [Range(0, 5)]
     public int speed;
+    [Range(0, 5)]
     public int shields;
+    [Range(0, 5)]
     public int hull;
 
     [Header("Generation")]
