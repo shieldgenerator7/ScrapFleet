@@ -4,26 +4,41 @@ using UnityEngine;
 
 public class CardGenerator : MonoBehaviour
 {
-
-    public float safeEdge = 0.25f;
-    public float decrement = 0.23f;
-    public float startY = 3.5f - 0.25f;
-
+    [Header("Stats")]
+    public bool pilot;
     public int accuracy;
     public int fireRate;
     public int speed;
     public int shields;
+    public int hull;
 
+    [Header("Generation")]
+    public float safeEdge = 0.25f;
+    public float decrement = 0.23f;
+    public float startY = 3.5f - 0.25f;
+
+    [Header("Prefabs")]
+    public GameObject PilotPrefab;
     public GameObject AccuracyPrefab;
     public GameObject FireRatePrefab;
     public GameObject SpeedPrefab;
     public GameObject ShieldsPrefab;
+    public GameObject HullPrefab;
 
 
     public void generate()
     {
         clearStats();
         float currentY = startY;//where the next stat is going to be placed
+        //Pilot
+        if (pilot)
+        {
+            GameObject stat = Instantiate(PilotPrefab);
+            Vector3 pos = stat.transform.position;
+            pos.y = currentY;
+            stat.transform.position = pos;
+            currentY -= decrement;
+        }
         //Accuracy
         for (int i = 0; i < accuracy; i++)
         {
@@ -55,6 +70,15 @@ public class CardGenerator : MonoBehaviour
         for (int i = 0; i < shields; i++)
         {
             GameObject stat = Instantiate(ShieldsPrefab);
+            Vector3 pos = stat.transform.position;
+            pos.y = currentY;
+            stat.transform.position = pos;
+            currentY -= decrement;
+        }
+        //Hull
+        for (int i = 0; i < hull; i++)
+        {
+            GameObject stat = Instantiate(HullPrefab);
             Vector3 pos = stat.transform.position;
             pos.y = currentY;
             stat.transform.position = pos;
