@@ -6,7 +6,7 @@ public class CardGenerator : MonoBehaviour
 {
     [Header("Stats")]
     public bool pilot;
-    [Range(0,5)]
+    [Range(0, 5)]
     public int accuracy;
     [Range(0, 5)]
     public int fireRate;
@@ -30,6 +30,22 @@ public class CardGenerator : MonoBehaviour
     public GameObject ShieldsPrefab;
     public GameObject HullPrefab;
 
+    public void setStats(string stats)
+    {
+        //Remove underscores
+        int _index = stats.IndexOf('_');
+        while (_index > -1)
+        {
+            stats = stats.Remove(_index, 1);
+            _index = stats.IndexOf('_');
+        }
+        pilot = (("" + stats[0]).ToLower() == "t") ? true : false;
+        accuracy = int.Parse("" + stats[1]);
+        fireRate = int.Parse("" + stats[2]);
+        speed = int.Parse("" + stats[3]);
+        shields = int.Parse("" + stats[4]);
+        hull = int.Parse("" + stats[5]);
+    }
 
     public void generate()
     {
