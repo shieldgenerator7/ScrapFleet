@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Pilot_Ace_FireRate
   m_EditorClassIdentifier: 
   name: Fire Rate Ace Pilot
+  tags:
+  - PILOT
   effect: 
   count: 3
   pilot: 1

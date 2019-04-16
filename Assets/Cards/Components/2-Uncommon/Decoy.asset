@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Pilot_Master_Shields
+  m_Name: Decoy
   m_EditorClassIdentifier: 
-  name: Shields Master Pilot
+  name: Decoy
   tags:
-  - PILOT
-  effect: 
-  count: 4
+  - LAUNCHABLE
+  - AUTOPILOT
+  effect: During an attack, launch this decoy from your ship. This decoy becomes the
+    new target of the attack.
+  count: 10
   pilot: 1
-  accuracy: 1
+  accuracy: 0
   fireRate: 0
-  speed: 0
-  shields: 2
-  hull: 5
+  speed: 2
+  shields: 1
+  hull: 1

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Pilot_Elder
   m_EditorClassIdentifier: 
   name: Elder Pilot
+  tags:
+  - PILOT
   effect: 
   count: 2
   pilot: 1

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Pilot_Jack_No_Shields
   m_EditorClassIdentifier: 
   name: No Shields Jack Pilot
+  tags:
+  - PILOT
   effect: 
   count: 5
   pilot: 1

@@ -6,6 +6,8 @@ using UnityEngine;
 public class CardData : ScriptableObject
 {
     public new string name;
+    public List<string> tags;
+    [TextArea(0,5)]
     public string effect;
     public int count;
 

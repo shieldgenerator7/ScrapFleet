@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Pilot_Master_FireRate
   m_EditorClassIdentifier: 
   name: Fire Rate Master Pilot
+  tags:
+  - PILOT
   effect: 
   count: 4
   pilot: 1
