@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardData:
-  - '2:_T_11_11_5: "Elder"'
+  - '2:_T_11_11_5: Elder'
 --- !u!4 &1623376142
 Transform:
   m_ObjectHideFlags: 0

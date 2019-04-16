@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using UnityEditor;
 
 public class DeckGenerator : MonoBehaviour
 {
@@ -29,5 +31,24 @@ public class DeckGenerator : MonoBehaviour
         int count = int.Parse(data[0]);
         CardGen.setStats(data[1]);
         CardGen.generate();
+        Texture2D tex2d = CardGen.generateCardImage();
+        string filename = "" + data[2].ToString().Trim() + count + ".png";
+        SaveTextureToFile(tex2d, filename);
+        EditorUtility.RevealInFinder(Application.persistentDataPath);
+    }
+
+    /// <summary>
+    /// Saves the given texture to the given filename
+    /// 2019-04-15: copied from http://answers.unity.com/answers/245658/view.html
+    /// </summary>
+    /// <param name=""></param>
+    /// <param name=""></param>
+    private void SaveTextureToFile(Texture2D texture, string fileName)
+    {
+        byte[] bytes = texture.EncodeToPNG();
+        FileStream file = File.Open(Application.persistentDataPath + "/" + fileName, FileMode.Create);
+        BinaryWriter binary = new BinaryWriter(file);
+        binary.Write(bytes);
+        file.Close();
     }
 }

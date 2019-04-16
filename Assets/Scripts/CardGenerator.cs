@@ -131,4 +131,25 @@ public class CardGenerator : MonoBehaviour
             //currentY -= decrement;
         }
     }
+
+    /// <summary>
+    /// Grabs image data from card
+    /// 2019-04-15: copied from Stonicorn.CheckPointChecker.grabCheckPointCameraData()
+    /// </summary>
+    /// <returns></returns>
+    public Texture2D generateCardImage()
+    {//2016-12-06: The following code copied from an answer by jashan: http://answers.unity3d.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
+        int resWidth = 650;
+        int resHeight = 909;
+        RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
+        Camera.main.targetTexture = rt;
+        Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.ARGB32, false);
+        Camera.main.Render();
+        RenderTexture.active = rt;
+        screenShot.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
+        screenShot.Apply();
+        Camera.main.targetTexture = null;
+        RenderTexture.active = null; // JC: added to avoid errors
+        return screenShot;
+    }
 }
