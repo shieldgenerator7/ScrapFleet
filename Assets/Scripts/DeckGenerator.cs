@@ -40,7 +40,7 @@ public class DeckGenerator : MonoBehaviour
             CardGen.setStats(data);
             CardGen.generate();
             Texture2D tex2d = CardGen.generateCardImage();
-            string baseFileName = data.name + "_";
+            string baseFileName = data.name.Replace(" ", "_") + "_";
             for (int j = 1; j <= count; j++)
             {
                 string filename = baseFileName + j + ".png";
