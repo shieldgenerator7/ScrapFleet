@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardGenerator : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class CardGenerator : MonoBehaviour
     [Range(0, 5)]
     public int hull;
 
+    public CardData cardData;
+
     [Header("Generation")]
     public float safeEdge = 0.25f;
     public float decrement = 0.23f;
@@ -32,8 +35,15 @@ public class CardGenerator : MonoBehaviour
     public GameObject ShieldsPrefab;
     public GameObject HullPrefab;
 
+    [Header("Canvas Elements")]
+    public Image imgPortrait;
+    public Text txtName;
+    public Text txtTags;
+    public Text txtEffect;
+
     public void setStats(CardData data)
     {
+        cardData = data;
         pilot = data.pilot;
         autopilot = data.autopilot;
         accuracy = data.accuracy;
@@ -113,6 +123,20 @@ public class CardGenerator : MonoBehaviour
 
         //Do the same for the other side
         copyFlipped(new Vector2(2.5f / 2, 3.5f / 2));
+
+        if (cardData)
+        {
+            //Set the canvas element data
+            //Portrait
+            imgPortrait.sprite = cardData.portrait;
+            imgPortrait.enabled = imgPortrait.sprite != null;
+            //Name
+            txtName.text = cardData.name;
+            //Tags
+            txtTags.text = cardData.TagString;
+            //Effect
+            txtEffect.text = cardData.effect;
+        }
     }
 
     public void clearStats(bool resetStats = false)
