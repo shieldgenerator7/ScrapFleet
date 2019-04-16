@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
+  m_Name: Piercing_Shot
+  m_EditorClassIdentifier: 
+  name: Piercing Shot
+  portrait: {fileID: 21300000, guid: b9cc108efa0017243ba76595eb9892c3, type: 3}
+  tags: []
+  effect: If this ship reveals a component, it may make a 1 ACC / 1 FRR attack on
+    any other ship.
+  count: 5
+  pilot: 0
+  autopilot: 0
+  accuracy: 3
+  fireRate: 0
+  speed: 0
+  shields: 0
+  hull: 0

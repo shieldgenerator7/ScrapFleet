@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Escape Pod
+  m_Name: Subspace_Shield
   m_EditorClassIdentifier: 
-  name: Escape Pod
-  portrait: {fileID: 21300000, guid: 00a3f02bc30fdd94b886b6ceb4d09d7a, type: 3}
+  name: Subspace Shield
+  portrait: {fileID: 21300000, guid: ca050056a8d569c4b8d367649ea49b30, type: 3}
   tags:
-  - LAUNCHABLE
-  - AUTOPILOT
-  effect: If this ship's pilot would be killed, launch this escape pod with the pilot,
-    and void the pilot's stats. Then, at the beginning of your next turn, return this
-    ship to your scrap pile.
-  count: 10
+  - LEGENDARY
+  effect: If the attacker misses this ship, regenerate 1 shield. If a shield on this
+    ship is destroyed, gain 1 SPD until the end of your next turn.
+  count: 1
   pilot: 0
-  autopilot: 1
+  autopilot: 0
   accuracy: 0
   fireRate: 0
-  speed: 1
-  shields: 1
-  hull: 2
+  speed: 5
+  shields: 5
+  hull: 0

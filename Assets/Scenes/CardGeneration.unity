@@ -182,9 +182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Targetting
-
-    Array'
+  m_Text: LEGENDARY.
 --- !u!222 &273787227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -325,7 +323,7 @@ MonoBehaviour:
   speed: 0
   shields: 0
   hull: 0
-  cardData: {fileID: 0}
+  cardData: {fileID: 11400000, guid: 84d192133693e824886b5abef77f5815, type: 2}
   safeEdge: 0.25
   decrement: 0.25
   startY: 3.25
@@ -483,7 +481,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b17a1895109689546adc62235affda44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61c26cc66a8021046be57452781b8802, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -558,6 +556,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d4470d0f600df4e45a8f020a8aaa12e8, type: 2}
   - {fileID: 11400000, guid: b7b2d34775b2ace4bbe40e85f288dfb4, type: 2}
   - {fileID: 11400000, guid: 4beb5a10c5d4c6d4d9d3f6e2780a1331, type: 2}
+  - {fileID: 11400000, guid: b45c676c14567954d9cb2dc36fcb416c, type: 2}
+  - {fileID: 11400000, guid: 98bc28f1f8d6c2041a3138f1ec7e690f, type: 2}
+  - {fileID: 11400000, guid: b0504253ed07e67498bac8f731ca2408, type: 2}
+  - {fileID: 11400000, guid: 586c38838e6bc4b4dab63027ab193720, type: 2}
+  - {fileID: 11400000, guid: f460f2772e2dd074bafad5b379a6db1c, type: 2}
+  - {fileID: 11400000, guid: 84d192133693e824886b5abef77f5815, type: 2}
 --- !u!4 &1623376142
 Transform:
   m_ObjectHideFlags: 0
@@ -642,9 +646,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'TargettingArray TargettingArray TargettingArray TargettingArray TargettingArray
-    TargettingArray TargettingArray TargettingArray TargettingArray TargettingArray
-    TargettingArray TargettingArray TargettingArray TargettingArray TargettingArray '
+  m_Text: If this ship destroys another ship, it may make another attack.
 --- !u!222 &1646580248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -723,9 +725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Targetting
-
-    Array'
+  m_Text: Super Nova Battle Axe
 --- !u!222 &1908890534
 CanvasRenderer:
   m_ObjectHideFlags: 0
