@@ -29,6 +29,7 @@ public class DeckGenerator : MonoBehaviour
 
     public void generate()
     {
+        int sum = 0;
         for (int i = 0; i < cardData.Count; i++)
         {
             CardData data = cardData[i];
@@ -37,6 +38,7 @@ public class DeckGenerator : MonoBehaviour
             {
                 count = 1;
             }
+            sum += count;
             CardGen.setStats(data);
             CardGen.generate();
             Texture2D tex2d = CardGen.generateCardImage();
@@ -48,6 +50,8 @@ public class DeckGenerator : MonoBehaviour
             }
         }
         EditorUtility.RevealInFinder(Application.persistentDataPath + "/" + Application.productName);
+        CardGen.clearStats(true);
+        Debug.Log(""+sum+" cards generated! Time: "+System.DateTime.Now);
     }
 
     /// <summary>

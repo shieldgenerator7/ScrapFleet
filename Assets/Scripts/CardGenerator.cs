@@ -115,11 +115,22 @@ public class CardGenerator : MonoBehaviour
         copyFlipped(new Vector2(2.5f / 2, 3.5f / 2));
     }
 
-    void clearStats()
+    public void clearStats(bool resetStats = false)
     {
         foreach (GameObject go in GameObject.FindGameObjectsWithTag("Stat"))
         {
             DestroyImmediate(go);
+        }
+
+        if (resetStats)
+        {
+            pilot = false;
+            autopilot = false;
+            accuracy = 0;
+            fireRate = 0;
+            speed = 0;
+            shields = 0;
+            hull = 0;
         }
     }
 
