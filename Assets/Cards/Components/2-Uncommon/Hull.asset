@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Hull
   m_EditorClassIdentifier: 
   name: Hull
+  portrait: {fileID: 21300000, guid: 2ce12f3aa87cebd458bcce6554155380, type: 3}
   tags: []
   effect: 
   count: 10
   pilot: 0
+  autopilot: 0
   accuracy: 0
   fireRate: 0
   speed: 0

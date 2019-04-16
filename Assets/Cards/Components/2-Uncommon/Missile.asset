@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Missile
   m_EditorClassIdentifier: 
   name: Missile
+  portrait: {fileID: 21300000, guid: 00a3f02bc30fdd94b886b6ceb4d09d7a, type: 3}
   tags:
   - LAUNCHABLE
   - AUTOPILOT

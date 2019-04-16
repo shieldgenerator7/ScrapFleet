@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Optimized_FireRate
   m_EditorClassIdentifier: 
   name: Laser Turret
+  portrait: {fileID: 21300000, guid: 61c26cc66a8021046be57452781b8802, type: 3}
+  tags: []
   effect: 
   count: 25
   pilot: 0
+  autopilot: 0
   accuracy: 0
   fireRate: 2
   speed: 0

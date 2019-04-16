@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Pilot_Ace_Speed
   m_EditorClassIdentifier: 
   name: Speed Ace Pilot
+  portrait: {fileID: 21300000, guid: b17a1895109689546adc62235affda44, type: 3}
   tags:
   - PILOT
   effect: 
   count: 3
   pilot: 1
+  autopilot: 0
   accuracy: 0
   fireRate: 0
   speed: 3

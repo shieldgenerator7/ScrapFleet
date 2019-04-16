@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Pilot_Jack_No_Shields
   m_EditorClassIdentifier: 
   name: No Shields Jack Pilot
+  portrait: {fileID: 21300000, guid: b17a1895109689546adc62235affda44, type: 3}
   tags:
   - PILOT
   effect: 
   count: 5
   pilot: 1
+  autopilot: 0
   accuracy: 1
   fireRate: 1
   speed: 1
