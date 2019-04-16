@@ -244,7 +244,7 @@ MonoBehaviour:
   shields: 0
   hull: 0
   safeEdge: 0.25
-  decrement: 0.22
+  decrement: 0.25
   startY: 3.25
   PilotPrefab: {fileID: 343796891593131376, guid: 5eae019c61ccd6b4e81b2690398fd353,
     type: 3}
@@ -366,8 +366,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebde2659c944eea49849093ef111bfe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forceOneOfEach: 1
   cardData:
   - '2:_T_11_11_5: Elder'
+  - '25:_F_20_00_0: Targetting Array'
+  - '25:_F_02_00_0: Turret'
+  - '25:_F_00_20_0: Engines'
+  - '25:_F_00_02_0: Shield Generator'
 --- !u!4 &1623376142
 Transform:
   m_ObjectHideFlags: 0
