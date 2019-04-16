@@ -368,11 +368,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceOneOfEach: 1
   cardData:
-  - '2:_T_11_11_5: Elder'
-  - '25:_F_20_00_0: Targetting Array'
-  - '25:_F_02_00_0: Turret'
-  - '25:_F_00_20_0: Engines'
-  - '25:_F_00_02_0: Shield Generator'
+  - {fileID: 11400000, guid: 556c4a416a2407c49af90d2f456078f2, type: 2}
+  - {fileID: 11400000, guid: 976f1ef7c2d3bfa46af6696a356d6f13, type: 2}
+  - {fileID: 11400000, guid: 22fa6830eb29de64d8ab13b61ec70e57, type: 2}
+  - {fileID: 11400000, guid: a61bea98aaf3b64478c9ea767646bd4a, type: 2}
+  - {fileID: 11400000, guid: db93688bfa89db04faf75fd5b05151b1, type: 2}
+  - {fileID: 11400000, guid: 3ad66e6f3b003254dab3414ea6c7561e, type: 2}
+  - {fileID: 11400000, guid: ee439002200e0744c94677f3e92f51bd, type: 2}
+  - {fileID: 11400000, guid: 71d180ba6115d934099270131ff78254, type: 2}
+  - {fileID: 11400000, guid: 17ae243365bfd3e40b9e4dbdd44b78f1, type: 2}
+  - {fileID: 11400000, guid: 93cb49685ad38e54aa03d3274ef28cd9, type: 2}
+  - {fileID: 11400000, guid: db30018c7c987b5478455eb5b5f01353, type: 2}
+  - {fileID: 11400000, guid: 2e5b5b83fc1d74d46acd18832f9338cb, type: 2}
+  - {fileID: 11400000, guid: 656c9c981d26fbd41bb9b1ddc7886275, type: 2}
 --- !u!4 &1623376142
 Transform:
   m_ObjectHideFlags: 0

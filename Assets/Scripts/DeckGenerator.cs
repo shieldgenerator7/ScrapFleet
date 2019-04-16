@@ -12,7 +12,7 @@ public class DeckGenerator : MonoBehaviour
     /// The string data of what to write in the cards
     /// [number of cards]:[pilot?][accuracy][fire rate][speed][shields][hull]
     /// </summary>
-    public List<string> cardData;//25:t11115
+    public List<CardData> cardData;//25:t11115
 
     private CardGenerator cardGenerator;
     public CardGenerator CardGen
@@ -31,16 +31,16 @@ public class DeckGenerator : MonoBehaviour
     {
         for (int i = 0; i < cardData.Count; i++)
         {
-            string[] data = cardData[i].Split(':');
-            int count = int.Parse(data[0]);
+            CardData data = cardData[i];
+            int count = data.count;
             if (forceOneOfEach)
             {
                 count = 1;
             }
-            CardGen.setStats(data[1]);
+            CardGen.setStats(data);
             CardGen.generate();
             Texture2D tex2d = CardGen.generateCardImage();
-            string baseFileName = "" + data[2].ToString().Trim() + "_";
+            string baseFileName = data.name + "_";
             for (int j = 1; j <= count; j++)
             {
                 string filename = baseFileName + j + ".png";
