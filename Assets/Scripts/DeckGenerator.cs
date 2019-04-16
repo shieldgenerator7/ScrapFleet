@@ -29,12 +29,17 @@ public class DeckGenerator : MonoBehaviour
     {
         string[] data = cardData[0].Split(':');
         int count = int.Parse(data[0]);
+
         CardGen.setStats(data[1]);
         CardGen.generate();
         Texture2D tex2d = CardGen.generateCardImage();
-        string filename = "" + data[2].ToString().Trim() + count + ".png";
-        SaveTextureToFile(tex2d, filename);
-        EditorUtility.RevealInFinder(Application.persistentDataPath);
+        string baseFileName = "" + data[2].ToString().Trim() + "_";
+        for (int i = 1; i <= count; i++)
+        {
+            string filename = baseFileName + i + ".png";
+            SaveTextureToFile(tex2d, filename);
+        }
+        EditorUtility.RevealInFinder(Application.persistentDataPath+"/"+Application.productName);
     }
 
     /// <summary>
