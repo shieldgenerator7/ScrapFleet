@@ -19,7 +19,8 @@ MonoBehaviour:
   effect: During an attack, launch this decoy from your ship. This decoy becomes the
     new target of the attack.
   count: 10
-  pilot: 1
+  pilot: 0
+  autopilot: 1
   accuracy: 0
   fireRate: 0
   speed: 2

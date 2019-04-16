@@ -19,7 +19,8 @@ MonoBehaviour:
   effect: If this ship's pilot would be killed, launch this escape pod with the pilot.
     The pilot's stats are void until the beginning of your next turn.
   count: 10
-  pilot: 1
+  pilot: 0
+  autopilot: 1
   accuracy: 0
   fireRate: 0
   speed: 1

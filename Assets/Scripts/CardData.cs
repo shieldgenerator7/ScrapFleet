@@ -13,6 +13,7 @@ public class CardData : ScriptableObject
 
     [Header("Stats")]
     public bool pilot;
+    public bool autopilot;
     [Range(0, 5)]
     public int accuracy;
     [Range(0, 5)]

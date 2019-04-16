@@ -6,6 +6,7 @@ public class CardGenerator : MonoBehaviour
 {
     [Header("Stats")]
     public bool pilot;
+    public bool autopilot;
     [Range(0, 5)]
     public int accuracy;
     [Range(0, 5)]
@@ -24,6 +25,7 @@ public class CardGenerator : MonoBehaviour
 
     [Header("Prefabs")]
     public GameObject PilotPrefab;
+    public GameObject AutoPilotPrefab;
     public GameObject AccuracyPrefab;
     public GameObject FireRatePrefab;
     public GameObject SpeedPrefab;
@@ -33,6 +35,7 @@ public class CardGenerator : MonoBehaviour
     public void setStats(CardData data)
     {
         pilot = data.pilot;
+        autopilot = data.autopilot;
         accuracy = data.accuracy;
         fireRate = data.fireRate;
         speed = data.speed;
@@ -48,6 +51,15 @@ public class CardGenerator : MonoBehaviour
         if (pilot)
         {
             GameObject stat = Instantiate(PilotPrefab);
+            Vector3 pos = stat.transform.position;
+            pos.y = currentY;
+            stat.transform.position = pos;
+            currentY -= decrement;
+        }
+        //Auto Pilot
+        if (autopilot)
+        {
+            GameObject stat = Instantiate(AutoPilotPrefab);
             Vector3 pos = stat.transform.position;
             pos.y = currentY;
             stat.transform.position = pos;

@@ -19,7 +19,8 @@ MonoBehaviour:
   effect: After an attack, launch this missile from your ship. Ram any ship with this
     missile.
   count: 10
-  pilot: 1
+  pilot: 0
+  autopilot: 1
   accuracy: 0
   fireRate: 0
   speed: 3
