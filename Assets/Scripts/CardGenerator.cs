@@ -25,6 +25,7 @@ public class CardGenerator : MonoBehaviour
     public float safeEdge = 0.25f;
     public float decrement = 0.23f;
     public float startY = 3.5f - 0.25f;
+    public Vector2 cardSize;
 
     [Header("Prefabs")]
     public GameObject PilotPrefab;
@@ -41,6 +42,9 @@ public class CardGenerator : MonoBehaviour
     public Text txtTags;
     public Text txtEffect;
 
+    [Header("Guides")]
+    public GameObject guide;
+
     public void setStats(CardData data)
     {
         cardData = data;
@@ -55,7 +59,16 @@ public class CardGenerator : MonoBehaviour
 
     public void generate()
     {
+        //Clear the stats
         clearStats();
+        //Hide the guide
+        guide.SetActive(false);
+        //Center the camera
+        Vector3 camPos = Camera.main.transform.position;
+        camPos.x = cardSize.x / 2;
+        camPos.y = cardSize.y / 2;
+        Camera.main.transform.position = camPos;
+        //Generate the card stats
         float currentY = startY;//where the next stat is going to be placed
         //Pilot
         if (pilot)
@@ -122,7 +135,7 @@ public class CardGenerator : MonoBehaviour
         }
 
         //Do the same for the other side
-        copyFlipped(new Vector2(2.5f / 2, 3.5f / 2));
+        copyFlipped(cardSize / 2);
 
         if (cardData)
         {
