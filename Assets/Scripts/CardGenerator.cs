@@ -137,6 +137,11 @@ public class CardGenerator : MonoBehaviour
         //Do the same for the other side
         copyFlipped(cardSize / 2);
 
+        //Center the canvas
+        Vector3 canvasPos = txtName.canvas.transform.position;
+        canvasPos.x = cardSize.x / 2;
+        canvasPos.y = cardSize.y / 2;
+        txtName.canvas.transform.position = canvasPos;
         if (cardData)
         {
             //Set the canvas element data
