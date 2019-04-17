@@ -179,8 +179,8 @@ public class CardGenerator : MonoBehaviour
     /// <returns></returns>
     public Texture2D generateCardImage()
     {//2016-12-06: The following code copied from an answer by jashan: http://answers.unity3d.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
-        int resWidth = 650;
-        int resHeight = 909;
+        int resWidth = 825;
+        int resHeight = 1125;
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         Camera.main.targetTexture = rt;
         Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.ARGB32, false);

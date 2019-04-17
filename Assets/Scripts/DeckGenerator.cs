@@ -42,16 +42,27 @@ public class DeckGenerator : MonoBehaviour
             CardGen.setStats(data);
             CardGen.generate();
             Texture2D tex2d = CardGen.generateCardImage();
-            string baseFileName = data.name.Replace(" ", "_") + "_";
-            for (int j = 1; j <= count; j++)
+            byte[] bytes = tex2d.EncodeToPNG();
+            string baseFileName = data.name.Trim().Replace(" ", "_");
+            string fileExtension = ".png";
+            if (forceOneOfEach)
             {
-                string filename = baseFileName + j + ".png";
-                SaveTextureToFile(tex2d, filename);
+                string filename = baseFileName + "[" + data.count + "]" + fileExtension;
+                SaveTextureToFile(bytes, filename);
+            }
+            else
+            {
+                baseFileName += "_";
+                for (int j = 1; j <= count; j++)
+                {
+                    string filename = baseFileName + j + fileExtension;
+                    SaveTextureToFile(bytes, filename);
+                }
             }
         }
         EditorUtility.RevealInFinder(Application.persistentDataPath + "/" + Application.productName);
         CardGen.clearStats(true);
-        Debug.Log(""+sum+" cards generated! Time: "+System.DateTime.Now);
+        Debug.Log("" + sum + " cards generated! Time: " + System.DateTime.Now);
     }
 
     /// <summary>
@@ -60,9 +71,8 @@ public class DeckGenerator : MonoBehaviour
     /// </summary>
     /// <param name=""></param>
     /// <param name=""></param>
-    private void SaveTextureToFile(Texture2D texture, string fileName)
+    private void SaveTextureToFile(byte[] bytes, string fileName)
     {
-        byte[] bytes = texture.EncodeToPNG();
         FileStream file = File.Open(Application.persistentDataPath + "/" + fileName, FileMode.Create);
         BinaryWriter binary = new BinaryWriter(file);
         binary.Write(bytes);
