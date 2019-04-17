@@ -60,7 +60,7 @@ public class DeckGenerator : MonoBehaviour
                 }
             }
         }
-        EditorUtility.RevealInFinder(Application.persistentDataPath + "/" + Application.productName);
+        openCardFolder();
         CardGen.clearStats(true);
         Debug.Log("" + sum + " cards generated! Time: " + System.DateTime.Now);
     }
@@ -73,9 +73,22 @@ public class DeckGenerator : MonoBehaviour
     /// <param name=""></param>
     private void SaveTextureToFile(byte[] bytes, string fileName)
     {
-        FileStream file = File.Open(Application.persistentDataPath + "/" + fileName, FileMode.Create);
+        FileStream file = File.Open(CardFolder + fileName, FileMode.Create);
         BinaryWriter binary = new BinaryWriter(file);
         binary.Write(bytes);
         file.Close();
+    }
+
+    public void openCardFolder()
+    {
+        EditorUtility.RevealInFinder(CardFolder + Application.productName);
+    }
+
+    public string CardFolder
+    {
+        get
+        {
+            return Application.persistentDataPath + "/";
+        }
     }
 }

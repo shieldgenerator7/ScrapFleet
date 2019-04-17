@@ -14,5 +14,9 @@ public class DeckGeneratorEditor : Editor
         {
             cg.generate();
         }
+        if (GUILayout.Button("Open Folder"))
+        {
+            cg.openCardFolder();
+        }
     }
 }

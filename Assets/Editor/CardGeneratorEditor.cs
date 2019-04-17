@@ -14,5 +14,9 @@ public class CardGeneratorEditor : Editor
         {
             cg.generate();
         }
+        if (GUILayout.Button("Clear"))
+        {
+            cg.clearStats(true);
+        }
     }
 }
