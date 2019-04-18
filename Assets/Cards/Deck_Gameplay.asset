@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Deck_Gameplay
   m_EditorClassIdentifier: 
   name: Gameplay Deck
-  cardBack: {fileID: 0}
+  cardBack: {fileID: 21300000, guid: 3bb46c9777fcf0c4a996a3b18bf90869, type: 3}
   cards: []

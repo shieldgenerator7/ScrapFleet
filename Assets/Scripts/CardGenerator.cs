@@ -26,6 +26,7 @@ public class CardGenerator : MonoBehaviour
     public float decrement = 0.23f;
     public float startY = 3.5f - 0.25f;
     public Vector2 cardSize;
+    public GameObject cardBack;
 
     [Header("Prefabs")]
     public GameObject PilotPrefab;

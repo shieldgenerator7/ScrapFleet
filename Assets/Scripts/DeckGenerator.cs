@@ -72,6 +72,21 @@ public class DeckGenerator : MonoBehaviour
                     }
                 }
             }
+            //Make card back
+            if (deckData[i].cardBack != null){
+                GameObject cardBack = Instantiate(CardGen.cardBack);
+                SpriteRenderer cbSR = cardBack.GetComponent<SpriteRenderer>();
+                cbSR.sortingOrder = 100;
+                cbSR.sprite = deckData[i].cardBack;
+                cbSR.color = Color.white;
+
+                Texture2D tex2d = CardGen.generateCardImage();
+                byte[] bytes = tex2d.EncodeToPNG();
+                string filename = folderName + "back.png";
+                SaveTextureToFile(bytes, filename);
+
+                DestroyImmediate(cardBack);
+            }
         }
         openCardFolder();
         CardGen.clearStats(true);

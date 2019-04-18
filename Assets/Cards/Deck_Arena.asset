@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Deck_Arena
   m_EditorClassIdentifier: 
   name: Arena Deck
-  cardBack: {fileID: 0}
+  cardBack: {fileID: 21300000, guid: 3bb46c9777fcf0c4a996a3b18bf90869, type: 3}
   cards:
   - {fileID: 11400000, guid: 500b94499141e27488c2b030aead33c2, type: 2}
   - {fileID: 11400000, guid: 04fa220f4cb1ede4e99187beaad65098, type: 2}
