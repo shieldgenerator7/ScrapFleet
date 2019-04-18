@@ -29,7 +29,8 @@ public class DeckGenerator : MonoBehaviour
 
     public void generate()
     {
-        int sum = 0;
+        int fileSum = 0;
+        int cardCountSum = 0;
         for (int i = 0; i < deckData.Count; i++)
         {
             //Get folder
@@ -44,11 +45,12 @@ public class DeckGenerator : MonoBehaviour
             {
                 CardData data = cardData[j];
                 int count = data.count;
+                cardCountSum += count;
                 if (forceOneOfEach)
                 {
                     count = 1;
                 }
-                sum += count;
+                fileSum += count;
                 CardGen.setStats(data);
                 CardGen.generate();
                 Texture2D tex2d = CardGen.generateCardImage();
@@ -73,7 +75,7 @@ public class DeckGenerator : MonoBehaviour
         }
         openCardFolder();
         CardGen.clearStats(true);
-        Debug.Log("" + sum + " cards generated! Time: " + System.DateTime.Now);
+        Debug.Log("" + fileSum + " card files generated! Card count: " + cardCountSum + ". Time: " + System.DateTime.Now);
     }
 
     /// <summary>
