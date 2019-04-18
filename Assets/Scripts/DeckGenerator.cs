@@ -29,8 +29,13 @@ public class DeckGenerator : MonoBehaviour
 
     public void generate()
     {
+        StartCoroutine(generateProcess());
+    }
+    IEnumerator generateProcess()
+    {
         int fileSum = 0;
         int cardCountSum = 0;
+        int estimatedCount = 500;//2019-04-17: TODO: actually calculate this estimate
         for (int i = 0; i < deckData.Count; i++)
         {
             //Get folder
@@ -44,6 +49,13 @@ public class DeckGenerator : MonoBehaviour
             for (int j = 0; j < cardData.Count; j++)
             {
                 CardData data = cardData[j];
+                //Progress bar
+                EditorUtility.DisplayProgressBar(
+                    "Deck Generation",
+                    "Generating " + deckData[i].name + "/ " + data.name,
+                    (float)cardCountSum / (float)estimatedCount
+                    );
+                yield return null;
                 int count = data.count;
                 cardCountSum += count;
                 if (forceOneOfEach)
@@ -73,7 +85,8 @@ public class DeckGenerator : MonoBehaviour
                 }
             }
             //Make card back
-            if (deckData[i].cardBack != null){
+            if (deckData[i].cardBack != null)
+            {
                 GameObject cardBack = Instantiate(CardGen.cardBack);
                 SpriteRenderer cbSR = cardBack.GetComponent<SpriteRenderer>();
                 cbSR.sortingOrder = 100;
@@ -88,6 +101,7 @@ public class DeckGenerator : MonoBehaviour
                 DestroyImmediate(cardBack);
             }
         }
+        EditorUtility.ClearProgressBar();
         openCardFolder();
         CardGen.clearStats(true);
         Debug.Log("" + fileSum + " card files generated! Card count: " + cardCountSum + ". Time: " + System.DateTime.Now);
