@@ -402,7 +402,7 @@ MonoBehaviour:
   speed: 0
   shields: 0
   hull: 0
-  cardData: {fileID: 11400000, guid: 6da02716640632f4492d4710956b5e3d, type: 2}
+  cardData: {fileID: 11400000, guid: 520f8fcc48fe45745a8e5ef5db87ff1f, type: 2}
   safeEdge: 0.25
   decrement: 0.25
   startY: 3.25
@@ -563,7 +563,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 55b2f3d99989f6746aa12e2ff00a79af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b5ee5894cee05e4c8efc3b82eaf2535, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -697,7 +697,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: All ships gain +3 SPD.
+  m_Text: All ships lose 1 SPD.
 --- !u!222 &1646580248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -776,7 +776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Solar Winds
+  m_Text: Snow Planet
 --- !u!222 &1908890534
 CanvasRenderer:
   m_ObjectHideFlags: 0

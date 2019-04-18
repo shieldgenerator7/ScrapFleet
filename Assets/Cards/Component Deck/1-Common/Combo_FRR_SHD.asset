@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Combo_FRR_SHD
   m_EditorClassIdentifier: 
   name: Shielded Lasers
-  portrait: {fileID: 21300000, guid: 380d79e273f0d2f4197a5e72011105ca, type: 3}
+  portrait: {fileID: 21300000, guid: 6b4448e108b8e5e44944d6db2e064306, type: 3}
   tags: []
   effect: 
   count: 25
