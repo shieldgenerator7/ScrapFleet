@@ -609,59 +609,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceOneOfEach: 1
-  cardData:
-  - {fileID: 11400000, guid: 556c4a416a2407c49af90d2f456078f2, type: 2}
-  - {fileID: 11400000, guid: 976f1ef7c2d3bfa46af6696a356d6f13, type: 2}
-  - {fileID: 11400000, guid: 22fa6830eb29de64d8ab13b61ec70e57, type: 2}
-  - {fileID: 11400000, guid: a61bea98aaf3b64478c9ea767646bd4a, type: 2}
-  - {fileID: 11400000, guid: db93688bfa89db04faf75fd5b05151b1, type: 2}
-  - {fileID: 11400000, guid: 3ad66e6f3b003254dab3414ea6c7561e, type: 2}
-  - {fileID: 11400000, guid: ee439002200e0744c94677f3e92f51bd, type: 2}
-  - {fileID: 11400000, guid: 71d180ba6115d934099270131ff78254, type: 2}
-  - {fileID: 11400000, guid: 17ae243365bfd3e40b9e4dbdd44b78f1, type: 2}
-  - {fileID: 11400000, guid: 93cb49685ad38e54aa03d3274ef28cd9, type: 2}
-  - {fileID: 11400000, guid: db30018c7c987b5478455eb5b5f01353, type: 2}
-  - {fileID: 11400000, guid: 2e5b5b83fc1d74d46acd18832f9338cb, type: 2}
-  - {fileID: 11400000, guid: 656c9c981d26fbd41bb9b1ddc7886275, type: 2}
-  - {fileID: 11400000, guid: d52152bd4246c3a4c9505ccb0f73822b, type: 2}
-  - {fileID: 11400000, guid: a714001bd1139cf489afb0cdc08d8913, type: 2}
-  - {fileID: 11400000, guid: 3e1a1e8bc09334945bedf3ae390279cb, type: 2}
-  - {fileID: 11400000, guid: 8461372ab3cfc574e906fe626074b0a9, type: 2}
-  - {fileID: 11400000, guid: 0b718edf38d67fc4b9bc54c9127164ee, type: 2}
-  - {fileID: 11400000, guid: 554015ba40b48f0479538e72de8e150b, type: 2}
-  - {fileID: 11400000, guid: ffb9420f1a767dd4ba000f1d0604add9, type: 2}
-  - {fileID: 11400000, guid: ac464faac65519846932b8296917586d, type: 2}
-  - {fileID: 11400000, guid: 56afc80e18554e34793366b2c37aae3b, type: 2}
-  - {fileID: 11400000, guid: cad8a1802bee89f48b22f6c93ee3b237, type: 2}
-  - {fileID: 11400000, guid: 0a1dfd631ec409d4895b55e821f4b0a8, type: 2}
-  - {fileID: 11400000, guid: d4470d0f600df4e45a8f020a8aaa12e8, type: 2}
-  - {fileID: 11400000, guid: b7b2d34775b2ace4bbe40e85f288dfb4, type: 2}
-  - {fileID: 11400000, guid: 4beb5a10c5d4c6d4d9d3f6e2780a1331, type: 2}
-  - {fileID: 11400000, guid: b45c676c14567954d9cb2dc36fcb416c, type: 2}
-  - {fileID: 11400000, guid: 98bc28f1f8d6c2041a3138f1ec7e690f, type: 2}
-  - {fileID: 11400000, guid: b0504253ed07e67498bac8f731ca2408, type: 2}
-  - {fileID: 11400000, guid: 586c38838e6bc4b4dab63027ab193720, type: 2}
-  - {fileID: 11400000, guid: f460f2772e2dd074bafad5b379a6db1c, type: 2}
-  - {fileID: 11400000, guid: 84d192133693e824886b5abef77f5815, type: 2}
-  - {fileID: 11400000, guid: d3b5220b102cad443a35ec98aea415e1, type: 2}
-  - {fileID: 11400000, guid: ad6c4e3871723144093e5d82a7ee268b, type: 2}
-  - {fileID: 11400000, guid: 500b94499141e27488c2b030aead33c2, type: 2}
-  - {fileID: 11400000, guid: 04fa220f4cb1ede4e99187beaad65098, type: 2}
-  - {fileID: 11400000, guid: 67e1c03e695e9e94fa0d5b49b757a674, type: 2}
-  - {fileID: 11400000, guid: c43ad4a9dec48b74d9c9abf0f5c04294, type: 2}
-  - {fileID: 11400000, guid: e2d767b6ea1233343aa216c6d8e26804, type: 2}
-  - {fileID: 11400000, guid: 229a54ef2dae78d4caf7f86487e5f769, type: 2}
-  - {fileID: 11400000, guid: d577a0051df44c448923aa0f5ef4f37e, type: 2}
-  - {fileID: 11400000, guid: 520f8fcc48fe45745a8e5ef5db87ff1f, type: 2}
-  - {fileID: 11400000, guid: 8512fbef62853a140a23a4360181614c, type: 2}
-  - {fileID: 11400000, guid: 45b68f0787f27c3439a06d1460e41305, type: 2}
-  - {fileID: 11400000, guid: 321fd8cdbcfee9c4b848b4a9e9c606e6, type: 2}
-  - {fileID: 11400000, guid: 101a35c05d6071943bb8705d24d48c7f, type: 2}
-  - {fileID: 11400000, guid: b065f87ba17c3f54097e7c882ca91dd8, type: 2}
-  - {fileID: 11400000, guid: 91099e82ca07e524d8465d7706606911, type: 2}
-  - {fileID: 11400000, guid: 0097baa31b1de5246ae4dc240f114fce, type: 2}
-  - {fileID: 11400000, guid: 05c492e754701a946a8f02b748a7684b, type: 2}
-  - {fileID: 11400000, guid: 6da02716640632f4492d4710956b5e3d, type: 2}
+  deckData:
+  - {fileID: 11400000, guid: 1d3f6d04c49ab3b4aba9cb5332069e87, type: 2}
+  - {fileID: 11400000, guid: 419dee80ce652e041b24e8466ed59d08, type: 2}
 --- !u!4 &1623376142
 Transform:
   m_ObjectHideFlags: 0

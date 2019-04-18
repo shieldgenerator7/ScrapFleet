@@ -12,7 +12,7 @@ public class DeckGenerator : MonoBehaviour
     /// The string data of what to write in the cards
     /// [number of cards]:[pilot?][accuracy][fire rate][speed][shields][hull]
     /// </summary>
-    public List<CardData> cardData;//25:t11115
+    public List<DeckData> deckData;//25:t11115
 
     private CardGenerator cardGenerator;
     public CardGenerator CardGen
@@ -30,33 +30,44 @@ public class DeckGenerator : MonoBehaviour
     public void generate()
     {
         int sum = 0;
-        for (int i = 0; i < cardData.Count; i++)
+        for (int i = 0; i < deckData.Count; i++)
         {
-            CardData data = cardData[i];
-            int count = data.count;
-            if (forceOneOfEach)
+            //Get folder
+            string folderName = deckData[i].name.Trim().Replace(" ", "_") + "/";
+            if (!Directory.Exists(CardFolder + folderName))
             {
-                count = 1;
+                Directory.CreateDirectory(CardFolder + folderName);
             }
-            sum += count;
-            CardGen.setStats(data);
-            CardGen.generate();
-            Texture2D tex2d = CardGen.generateCardImage();
-            byte[] bytes = tex2d.EncodeToPNG();
-            string baseFileName = data.name.Trim().Replace(" ", "_");
-            string fileExtension = ".png";
-            if (forceOneOfEach)
+            //Process cards of the deck
+            List<CardData> cardData = deckData[i].cards;
+            for (int j = 0; j < cardData.Count; j++)
             {
-                string filename = baseFileName + "[" + data.count + "]" + fileExtension;
-                SaveTextureToFile(bytes, filename);
-            }
-            else
-            {
-                baseFileName += "_";
-                for (int j = 1; j <= count; j++)
+                CardData data = cardData[j];
+                int count = data.count;
+                if (forceOneOfEach)
                 {
-                    string filename = baseFileName + j + fileExtension;
+                    count = 1;
+                }
+                sum += count;
+                CardGen.setStats(data);
+                CardGen.generate();
+                Texture2D tex2d = CardGen.generateCardImage();
+                byte[] bytes = tex2d.EncodeToPNG();
+                string baseFileName = folderName + data.name.Trim().Replace(" ", "_");
+                string fileExtension = ".png";
+                if (forceOneOfEach)
+                {
+                    string filename = baseFileName + "[" + data.count + "]" + fileExtension;
                     SaveTextureToFile(bytes, filename);
+                }
+                else
+                {
+                    baseFileName += "_";
+                    for (int c = 1; c <= count; c++)
+                    {
+                        string filename = baseFileName + c + fileExtension;
+                        SaveTextureToFile(bytes, filename);
+                    }
                 }
             }
         }
