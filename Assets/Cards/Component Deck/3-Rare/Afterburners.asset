@@ -17,7 +17,7 @@ MonoBehaviour:
   tags: []
   effect: At the start of an attack on this ship, put double the space cards in this
     ship's deck. If the attacker misses, put X more space cards in this ship's deck,
-    where X is this ship's base speed.
+    where X is half of this ship's base speed, rounded up.
   count: 5
   pilot: 0
   autopilot: 0
