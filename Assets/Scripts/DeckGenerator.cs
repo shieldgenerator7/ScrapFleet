@@ -8,6 +8,8 @@ public class DeckGenerator : MonoBehaviour
 {
     public bool forceOneOfEach = false;//true to force only one of each card to be generated
 
+    private IEnumerator generationProcess;
+
     /// <summary>
     /// The string data of what to write in the cards
     /// [number of cards]:[pilot?][accuracy][fire rate][speed][shields][hull]
@@ -26,10 +28,17 @@ public class DeckGenerator : MonoBehaviour
             return cardGenerator;
         }
     }
-
     public void generate()
     {
-        StartCoroutine(generateProcess());
+        if (generationProcess == null)
+        {
+            generationProcess = generateProcess();
+            EditorApplication.update += generate;
+        }
+        else
+        {
+            generationProcess.MoveNext();
+        }
     }
     IEnumerator generateProcess()
     {
@@ -101,10 +110,13 @@ public class DeckGenerator : MonoBehaviour
                 DestroyImmediate(cardBack);
             }
         }
-        EditorUtility.ClearProgressBar();
         openCardFolder();
         CardGen.clearStats(true);
         Debug.Log("" + fileSum + " card files generated! Card count: " + cardCountSum + ". Time: " + System.DateTime.Now);
+
+        EditorUtility.ClearProgressBar();
+        generationProcess = null;
+        EditorApplication.update -= generate;
     }
 
     /// <summary>
