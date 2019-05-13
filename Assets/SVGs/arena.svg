@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.11" height="48.55" viewBox="0 0 50.11 48.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>arena</title>
+  <g id="Warstwa_2" data-name="Warstwa 2">
+    <g id="Warstwa_2-2" data-name="Warstwa 2">
+      <g>
+        <circle class="cls-1" cx="36.02" cy="11.75" r="3.92"/>
+        <circle class="cls-1" cx="46.2" cy="37.59" r="3.92"/>
+        <circle class="cls-1" cx="15.66" cy="37.59" r="3.13"/>
+        <circle class="cls-1" cx="1.17" cy="14.49" r="1.17"/>
+        <circle class="cls-1" cx="11.35" cy="1.17" r="1.17"/>
+        <circle class="cls-1" cx="23.88" cy="17.62" r="1.17"/>
+        <circle class="cls-1" cx="27.8" cy="3.52" r="1.17"/>
+        <circle class="cls-1" cx="4.31" cy="39.54" r="1.17"/>
+        <circle class="cls-1" cx="14.49" cy="47.37" r="1.17"/>
+        <circle class="cls-1" cx="32.5" cy="29.36" r="1.17"/>
+        <circle class="cls-1" cx="47.37" cy="1.17" r="1.17"/>
+        <circle class="cls-1" cx="48.16" cy="14.49" r="1.17"/>
+        <circle class="cls-1" cx="5.87" cy="27.8" r="1.17"/>
+        <circle class="cls-1" cx="5.87" cy="47.37" r="1.17"/>
+        <circle class="cls-1" cx="33.28" cy="45.81" r="1.17"/>
+      </g>
+    </g>
+  </g>
+</svg>
