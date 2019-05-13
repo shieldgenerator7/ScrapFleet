@@ -17,7 +17,7 @@ MonoBehaviour:
   tags:
   - LEGENDARY
   effect: If the attacker misses this ship, regenerate 1 shield. If a shield on this
-    ship is destroyed, gain 1 SPD until the end of your next turn.
+    ship is destroyed, gain 1 speed until the end of your next turn.
   count: 1
   showText: 1
   pilot: 0

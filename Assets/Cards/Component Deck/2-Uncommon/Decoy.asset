@@ -17,8 +17,8 @@ MonoBehaviour:
   tags:
   - LAUNCHABLE
   - AUTOPILOT
-  effect: During an attack, launch this decoy from your ship. This decoy becomes the
-    new target of the attack.
+  effect: During an attack, you may launch this decoy from your ship. This decoy becomes
+    the new target of the attack.
   count: 10
   showText: 1
   pilot: 0

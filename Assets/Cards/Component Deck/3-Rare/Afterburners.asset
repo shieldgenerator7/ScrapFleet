@@ -17,7 +17,8 @@ MonoBehaviour:
   tags: []
   effect: Each time the attacker misses, remove 1 component from this ship's deck
     until the end of the attack. Components removed from the deck in this way can't
-    be destroyed during this attack but can still contribute to the ship's speed stat.
+    be destroyed during this attack, but can still contribute to the ship's speed
+    stat.
   count: 5
   showText: 1
   pilot: 0
