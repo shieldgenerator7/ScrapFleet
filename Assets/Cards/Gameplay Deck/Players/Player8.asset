@@ -18,13 +18,14 @@ MonoBehaviour:
   - You are Player 8
   effect: 'Stat Quick Reference:
 
-    -Accuracy: Reveal [accuracy] cards when attacking.
+    -Accuracy: Reveal X cards on attack.
 
-    -Fire Rate: Take [fire rate] shots when attacking.
+    -Fire Rate: Take X shots on attack.
 
-    -Speed: Add [speed] space cards to a defending ship.
+    -Speed: Add X space cards to a ship on defense. Space cards regenerate.
 
-    -Shields: Add [shields] shield cards to a launching ship.'
+    -Shields: Add X shield cards to a launching ship. Shield cards get destroyed instead
+    of components.'
   count: 1
   showText: 1
   pilot: 0

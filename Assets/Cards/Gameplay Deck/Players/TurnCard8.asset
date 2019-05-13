@@ -20,8 +20,8 @@ MonoBehaviour:
 
     1. Place your turn card at the bottom of the turn deck.
 
-    2. If the player you attacked has not entered their turn card, they place their
-    turn card on the top of the turn deck.
+    2. If the player you attacked has not yet placed their turn card in the turn deck,
+    they place their turn card on the top of the turn deck.
 
     3. It is now the turn of the player whose turn card is on top.'
   count: 1

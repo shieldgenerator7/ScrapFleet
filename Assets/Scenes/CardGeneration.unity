@@ -256,7 +256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: It is now Player 10's turn
+  m_Text: It is now Player 1's turn
 --- !u!222 &273787227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
   speed: 0
   shields: 0
   hull: 0
-  cardData: {fileID: 11400000, guid: a9834ce4a41885940af66f5e41c7e569, type: 2}
+  cardData: {fileID: 11400000, guid: 7b44ef406d98ff84cb55e663228117c4, type: 2}
   safeEdge: 0.25
   decrement: 0.3
   startY: 3.25
@@ -1204,8 +1204,8 @@ MonoBehaviour:
 
     1. Place your turn card at the bottom of the turn deck.
 
-    2. If the player you attacked has not entered their turn card, they place their
-    turn card on the top of the turn deck.
+    2. If the player you attacked has not yet placed their turn card in the turn deck,
+    they place their turn card on the top of the turn deck.
 
     3. It is now the turn of the player whose turn card is on top.'
 --- !u!222 &1646580248
@@ -1286,7 +1286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Turn Card 10
+  m_Text: Turn Card 1
 --- !u!222 &1908890534
 CanvasRenderer:
   m_ObjectHideFlags: 0

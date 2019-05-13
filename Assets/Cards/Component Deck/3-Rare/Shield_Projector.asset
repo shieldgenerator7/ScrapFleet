@@ -15,8 +15,8 @@ MonoBehaviour:
   name: Shield Projector
   portrait: {fileID: 21300000, guid: 7a000ce07b87b2c4192be78b16a9103b, type: 3}
   tags: []
-  effect: If a component or shield on another ship would be destroyed, destroy a shield
-    on this ship instead.
+  effect: If a component or shield on another ship would be destroyed, you may destroy
+    a shield on this ship instead.
   count: 5
   showText: 1
   pilot: 0
