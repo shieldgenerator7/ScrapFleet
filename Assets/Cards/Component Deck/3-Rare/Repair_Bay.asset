@@ -25,4 +25,4 @@ MonoBehaviour:
   fireRate: 0
   speed: 0
   shields: 0
-  hull: 5
+  hull: 3
