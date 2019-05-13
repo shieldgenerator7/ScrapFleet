@@ -134,7 +134,9 @@ public class DeckGenerator : MonoBehaviour
 
     public void openCardFolder()
     {
-        EditorUtility.RevealInFinder(CardFolder + Application.productName);
+        string folderPath = CardFolder + deckData[0].name.Replace(" ","_");
+        Debug.Log("Opening folder: " + folderPath);
+        EditorUtility.RevealInFinder(folderPath);
     }
 
     public string CardFolder
