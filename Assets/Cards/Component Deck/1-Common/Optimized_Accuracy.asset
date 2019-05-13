@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Optimized_Accuracy
   m_EditorClassIdentifier: 
   name: Targetting Array
-  portrait: {fileID: 21300000, guid: b9cc108efa0017243ba76595eb9892c3, type: 3}
+  portrait: {fileID: 21300000, guid: b41655f570a399f4b8ed05be4b638b95, type: 3}
   tags: []
   effect: 
   count: 25
