@@ -45,7 +45,7 @@ public class CardGenerator : MonoBehaviour
     public Image imgNameplate;
     public Image imgPortraitGiant;
 
-     [Header("Guides")]
+    [Header("Guides")]
     public GameObject guide;
 
     private void setStats(CardData data)
