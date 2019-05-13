@@ -18,7 +18,7 @@ MonoBehaviour:
   - ARENA 2
   effect: On the beginning of your turn, your ship with the most shields left loses
     1 shield.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

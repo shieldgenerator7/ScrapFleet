@@ -19,7 +19,7 @@ MonoBehaviour:
   effect: Destroyed components and shields go to a temporary pile instead of the discard
     pile. If the defending ship isn't destroyed at the end of the attack, return the
     components and shields in the temporary pile to the defending ship.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

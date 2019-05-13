@@ -17,7 +17,7 @@ MonoBehaviour:
   tags:
   - ARENA 4
   effect: If you miss, you may make a 1 ACC / 1 FRR attack on any other ship.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

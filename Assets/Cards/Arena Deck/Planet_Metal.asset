@@ -17,7 +17,7 @@ MonoBehaviour:
   tags:
   - ARENA 2
   effect: Each Arena Token grants 2 Special Components.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

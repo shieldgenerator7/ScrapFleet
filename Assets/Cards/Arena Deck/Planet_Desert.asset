@@ -17,7 +17,7 @@ MonoBehaviour:
   tags:
   - ARENA 5
   effect: Misses use up 1 extra shot.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   tags:
   - ARENA 4
   effect: 
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

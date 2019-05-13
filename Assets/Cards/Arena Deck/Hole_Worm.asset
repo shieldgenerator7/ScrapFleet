@@ -18,7 +18,7 @@ MonoBehaviour:
   - ARENA 4
   effect: Destroyed components go to the next player's scrap pile instead of the discard
     pile.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

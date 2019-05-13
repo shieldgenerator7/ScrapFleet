@@ -18,7 +18,7 @@ MonoBehaviour:
   - ARENA 2
   effect: Destroyed ships go to the Special Cards pile instead of the attacker's scrap
     pile.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

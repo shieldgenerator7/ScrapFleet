@@ -18,7 +18,7 @@ MonoBehaviour:
   - ARENA 8
   effect: At the beginning of your turn, all your ships with a SPD of 3 or less must
     discard 1 shield or 1 component.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   tags:
   - ARENA 5
   effect: On the beginning of your turn, all your ships regenerate 1 shield.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

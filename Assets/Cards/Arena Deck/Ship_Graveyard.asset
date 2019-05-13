@@ -18,7 +18,7 @@ MonoBehaviour:
   - ARENA 1
   effect: At the beginning of your turn, draw 1 card from the discard pile and place
     it in your scrap pile.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

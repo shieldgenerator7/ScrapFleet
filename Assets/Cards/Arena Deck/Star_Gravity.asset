@@ -18,7 +18,7 @@ MonoBehaviour:
   - ARENA 3
   effect: At the beginning of your turn, all your ships without any shields left must
     discard 1 component.
-  count: 2
+  count: 1
   pilot: 0
   autopilot: 0
   accuracy: 0
