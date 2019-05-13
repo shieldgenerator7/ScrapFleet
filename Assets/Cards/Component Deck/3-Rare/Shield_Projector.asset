@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Shield_Projector
   m_EditorClassIdentifier: 
   name: Shield Projector
-  portrait: {fileID: 21300000, guid: ca050056a8d569c4b8d367649ea49b30, type: 3}
+  portrait: {fileID: 21300000, guid: 7a000ce07b87b2c4192be78b16a9103b, type: 3}
   tags: []
   effect: If a component or shield on another ship would be destroyed, destroy a shield
     on this ship instead.
   count: 5
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Anomaly_Temporal
   m_EditorClassIdentifier: 
   name: Temporal Anomaly
-  portrait: {fileID: 21300000, guid: 55b2f3d99989f6746aa12e2ff00a79af, type: 3}
+  portrait: {fileID: 21300000, guid: 85b01f2790ae3f140969c2e62e3a2abf, type: 3}
   tags:
   - ARENA 1
   effect: Destroyed components and shields go to a temporary pile instead of the discard
     pile. If the defending ship isn't destroyed at the end of the attack, return the
     components and shields in the temporary pile to the defending ship.
   count: 1
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

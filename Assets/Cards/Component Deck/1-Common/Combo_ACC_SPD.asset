@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Combo_ACC_SPD
   m_EditorClassIdentifier: 
   name: Auto-Positioning Array
-  portrait: {fileID: 21300000, guid: 5444038bf3ad1d64eb92b737804d37f9, type: 3}
+  portrait: {fileID: 21300000, guid: b64ee223bbd53af46bd68d866075e5ae, type: 3}
   tags: []
   effect: 
   count: 25
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 1

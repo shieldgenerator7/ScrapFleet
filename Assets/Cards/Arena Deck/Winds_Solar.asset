@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Winds_Solar
   m_EditorClassIdentifier: 
   name: Solar Winds
-  portrait: {fileID: 21300000, guid: 55b2f3d99989f6746aa12e2ff00a79af, type: 3}
+  portrait: {fileID: 21300000, guid: 85b01f2790ae3f140969c2e62e3a2abf, type: 3}
   tags:
   - ARENA 2
   effect: All ships gain +3 SPD.
   count: 1
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

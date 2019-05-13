@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TurnCard4
   m_EditorClassIdentifier: 
   name: Turn Card 4
-  portrait: {fileID: 21300000, guid: 00a3f02bc30fdd94b886b6ceb4d09d7a, type: 3}
+  portrait: {fileID: 21300000, guid: 3c3ab6f9a21344043bf4763020d1e9a9, type: 3}
   tags:
   - It is now Player 4's turn
   effect: 'At the end of your turn:
@@ -25,6 +25,7 @@ MonoBehaviour:
 
     3. It is now the turn of the player whose turn card is on top.'
   count: 1
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

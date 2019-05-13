@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Subspace_Shield
   m_EditorClassIdentifier: 
   name: Subspace Shield
-  portrait: {fileID: 21300000, guid: 14cc631571f773f4f9f2ccc4350df2ba, type: 3}
+  portrait: {fileID: 21300000, guid: a97629463540f0a43a11b0a25eeed2eb, type: 3}
   tags:
   - LEGENDARY
   effect: If the attacker misses this ship, regenerate 1 shield. If a shield on this
     ship is destroyed, gain 1 SPD until the end of your next turn.
   count: 1
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

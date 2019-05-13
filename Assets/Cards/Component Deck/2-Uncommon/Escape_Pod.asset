@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Escape_Pod
   m_EditorClassIdentifier: 
   name: Escape Pod
-  portrait: {fileID: 21300000, guid: 00a3f02bc30fdd94b886b6ceb4d09d7a, type: 3}
+  portrait: {fileID: 21300000, guid: 3c3ab6f9a21344043bf4763020d1e9a9, type: 3}
   tags:
   - LAUNCHABLE
   - AUTOPILOT
@@ -21,6 +21,7 @@ MonoBehaviour:
     and void the pilot's stats. Then, at the beginning of your next turn, return this
     ship to your scrap pile.
   count: 10
+  showText: 1
   pilot: 0
   autopilot: 1
   accuracy: 0

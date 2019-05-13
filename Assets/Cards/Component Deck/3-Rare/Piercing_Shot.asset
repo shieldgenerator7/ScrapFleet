@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Piercing_Shot
   m_EditorClassIdentifier: 
   name: Piercing Shot
-  portrait: {fileID: 21300000, guid: b9cc108efa0017243ba76595eb9892c3, type: 3}
+  portrait: {fileID: 21300000, guid: 5250be788fe4c8147a73cad65d78646b, type: 3}
   tags: []
   effect: If this ship reveals a component, it may make a 1 ACC / 1 FRR attack on
     any other ship.
   count: 5
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 3

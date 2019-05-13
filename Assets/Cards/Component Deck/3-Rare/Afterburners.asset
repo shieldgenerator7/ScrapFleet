@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Afterburners
   m_EditorClassIdentifier: 
   name: Afterburners
-  portrait: {fileID: 21300000, guid: 3ffb1cc883c618a4384e8eb19f1b49ea, type: 3}
+  portrait: {fileID: 21300000, guid: 0884af578e361e24db721e4625837b47, type: 3}
   tags: []
   effect: At the start of an attack on this ship, put double the space cards in this
     ship's deck. If the attacker misses, put X more space cards in this ship's deck,
     where X is half of this ship's base speed, rounded up.
   count: 5
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

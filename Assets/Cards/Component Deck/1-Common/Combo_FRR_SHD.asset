@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Combo_FRR_SHD
   m_EditorClassIdentifier: 
   name: Shielded Turrets
-  portrait: {fileID: 21300000, guid: 6b4448e108b8e5e44944d6db2e064306, type: 3}
+  portrait: {fileID: 21300000, guid: 315330c46952b8a4c91e904e50372ebd, type: 3}
   tags: []
   effect: 
   count: 25
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0

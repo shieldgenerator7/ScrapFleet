@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Combo_SPD_SHD
   m_EditorClassIdentifier: 
   name: Engine Shields
-  portrait: {fileID: 21300000, guid: e4d60f530b0b2ed4697022d3a4bbad5e, type: 3}
+  portrait: {fileID: 21300000, guid: 329f922c22df04e429cd2feaaf204f22, type: 3}
   tags: []
   effect: 
   count: 25
+  showText: 1
   pilot: 0
   autopilot: 0
   accuracy: 0
