@@ -11,6 +11,7 @@ public class CardData : ScriptableObject
     [TextArea(0,5)]
     public string effect;
     public int count;
+    public bool showText = true;
 
     [Header("Stats")]
     public bool pilot;

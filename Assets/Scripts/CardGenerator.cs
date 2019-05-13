@@ -43,8 +43,9 @@ public class CardGenerator : MonoBehaviour
     public Text txtTags;
     public Text txtEffect;
     public Image imgNameplate;
+    public Image imgPortraitGiant;
 
-    [Header("Guides")]
+     [Header("Guides")]
     public GameObject guide;
 
     private void setStats(CardData data)
@@ -159,9 +160,13 @@ public class CardGenerator : MonoBehaviour
         if (cardData)
         {
             //Set the canvas element data
+            //Set enabled
+            imgPortrait.enabled = txtName.enabled = txtTags.enabled = txtEffect.enabled = cardData.showText;
+            imgPortraitGiant.enabled = !cardData.showText;
             //Portrait
             imgPortrait.sprite = cardData.portrait;
-            imgPortrait.enabled = imgPortrait.sprite != null;
+            imgPortrait.enabled = imgPortrait.sprite != null && imgPortrait.enabled;
+            imgPortraitGiant.sprite = cardData.portrait;
             //Name
             txtName.text = cardData.name;
             //Tags
