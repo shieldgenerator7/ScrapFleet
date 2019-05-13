@@ -72,8 +72,7 @@ public class DeckGenerator : MonoBehaviour
                     count = 1;
                 }
                 fileSum += count;
-                CardGen.setStats(data);
-                CardGen.generate();
+                CardGen.generate(data);
                 Texture2D tex2d = CardGen.generateCardImage();
                 byte[] bytes = tex2d.EncodeToPNG();
                 string baseFileName = folderName + data.name.Trim().Replace(" ", "_");

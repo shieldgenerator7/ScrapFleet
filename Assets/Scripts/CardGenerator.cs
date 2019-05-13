@@ -42,11 +42,12 @@ public class CardGenerator : MonoBehaviour
     public Text txtName;
     public Text txtTags;
     public Text txtEffect;
+    public Image imgNameplate;
 
     [Header("Guides")]
     public GameObject guide;
 
-    public void setStats(CardData data)
+    private void setStats(CardData data)
     {
         cardData = data;
         pilot = data.pilot;
@@ -58,12 +59,18 @@ public class CardGenerator : MonoBehaviour
         hull = data.hull;
     }
 
-    public void generate()
+    public void generate(CardData stats = null)
     {
         //Clear the stats
-        clearStats();
+        clearStats(true);
         //Hide the guide
         guide.SetActive(false);
+        //Set the stats
+        if (stats == null)
+        {
+            stats = cardData;
+        }
+        setStats(stats);
         //Center the camera
         Vector3 camPos = Camera.main.transform.position;
         camPos.x = cardSize.x / 2;
@@ -79,6 +86,12 @@ public class CardGenerator : MonoBehaviour
             pos.y = currentY;
             stat.transform.position = pos;
             currentY -= decrement;
+            //Show the nameplate for pilots only
+            imgNameplate.enabled = true;
+        }
+        else
+        {
+            imgNameplate.enabled = false;
         }
         //Auto Pilot
         if (autopilot)
