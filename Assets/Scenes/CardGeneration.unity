@@ -560,6 +560,7 @@ MonoBehaviour:
   decrement: 0.3
   startY: 3.25
   cardSize: {x: 2.57, y: 3.5}
+  resolution: {x: 825, y: 1125}
   cardBack: {fileID: 1127042509}
   PilotPrefab: {fileID: 3237566265413900830, guid: 1e7e664433a09f14da9228e258d6c690,
     type: 3}

@@ -26,6 +26,7 @@ public class CardGenerator : MonoBehaviour
     public float decrement = 0.23f;
     public float startY = 3.5f - 0.25f;
     public Vector2 cardSize;
+    public Vector2 resolution = new Vector2(825, 1125);
     public GameObject cardBack;
 
     [Header("Prefabs")]
@@ -217,8 +218,8 @@ public class CardGenerator : MonoBehaviour
     /// <returns></returns>
     public Texture2D generateCardImage()
     {//2016-12-06: The following code copied from an answer by jashan: http://answers.unity3d.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
-        int resWidth = 825;
-        int resHeight = 1125;
+        int resWidth = (int)resolution.x;
+        int resHeight = (int)resolution.y;
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         Camera.main.targetTexture = rt;
         Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.ARGB32, false);
