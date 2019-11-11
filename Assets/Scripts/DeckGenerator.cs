@@ -28,6 +28,7 @@ public class DeckGenerator : MonoBehaviour
             return cardGenerator;
         }
     }
+    [ContextMenu("GENERATE CONTEXT MENU")]
     public void generate()
     {
         if (generationProcess == null)

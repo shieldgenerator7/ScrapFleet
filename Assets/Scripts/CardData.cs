@@ -41,6 +41,7 @@ public class CardData : ScriptableObject
                 //Remove ending comma
                 result = result.Substring(0, result.Length - 2);
                 //Add ending period
+                //result += ".";
             }
             return result;
         }

@@ -147,7 +147,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2, y: 2}
+  m_SizeDelta: {x: 2.5561, y: 3.588}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23785902
 MonoBehaviour:
@@ -169,7 +169,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3c3ab6f9a21344043bf4763020d1e9a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8291733250c23e4db57f7245ddf96f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -256,7 +256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: It is now Player 1's turn
+  m_Text: PILOT
 --- !u!222 &273787227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
   speed: 0
   shields: 0
   hull: 0
-  cardData: {fileID: 11400000, guid: 7b44ef406d98ff84cb55e663228117c4, type: 2}
+  cardData: {fileID: 11400000, guid: db93688bfa89db04faf75fd5b05151b1, type: 2}
   safeEdge: 0.25
   decrement: 0.3
   startY: 3.25
@@ -814,7 +814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127042509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.047, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -992,7 +992,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3c3ab6f9a21344043bf4763020d1e9a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8291733250c23e4db57f7245ddf96f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602372798}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -1115,7 +1115,6 @@ MonoBehaviour:
   forceOneOfEach: 1
   deckData:
   - {fileID: 11400000, guid: 1d3f6d04c49ab3b4aba9cb5332069e87, type: 2}
-  - {fileID: 11400000, guid: 419dee80ce652e041b24e8466ed59d08, type: 2}
   - {fileID: 11400000, guid: 85acd1f03f5947244a16d3649b3de371, type: 2}
 --- !u!4 &1623376142
 Transform:
@@ -1201,14 +1200,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'At the end of your turn:
-
-    1. Place your turn card at the bottom of the turn deck.
-
-    2. If the player you attacked has not yet placed their turn card in the turn deck,
-    they place their turn card on the top of the turn deck.
-
-    3. It is now the turn of the player whose turn card is on top.'
+  m_Text: 
 --- !u!222 &1646580248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1287,7 +1279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Turn Card 1
+  m_Text: Elder Pilot
 --- !u!222 &1908890534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1633,6 +1625,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.307
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3237566265413900828, guid: 1e7e664433a09f14da9228e258d6c690,
         type: 3}
