@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -60,6 +61,12 @@ public class CardGenerator : MonoBehaviour
         speed = data.speed;
         shields = data.shields;
         hull = data.hull;
+    }
+
+    [MenuItem("SG7/Generate Card %#g")]
+    public static void generateCard()
+    {
+        FindObjectOfType<CardGenerator>().generate();
     }
 
     public void generate(CardData stats = null)
