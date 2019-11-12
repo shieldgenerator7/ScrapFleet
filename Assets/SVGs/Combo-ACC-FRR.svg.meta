@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 37fdbcdc35e284a4e9763cd11e01604a
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: gameObject/Combo-ACC-FRR
-    400000: gameObject/Combo-ACC-FRR/Transform
-    21200000: gameObject/Combo-ACC-FRR/SpriteRenderer
-    21300000: sprite
-    100100000: gameObject
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: gameObject/Combo-ACC-FRR
+  - first:
+      4: 400000
+    second: gameObject/Combo-ACC-FRR/Transform
+  - first:
+      212: 21200000
+    second: gameObject/Combo-ACC-FRR/SpriteRenderer
+  - first:
+      213: 21300000
+    second: sprite
+  - first:
+      1001: 100100000
+    second: gameObject
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -19,6 +30,7 @@ ScriptedImporter:
   alignment: 1
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -52,4 +64,5 @@ ScriptedImporter:
         width: 0
         height: 0
       spriteID: 902f3b3113ad730479144f70ea7a2a5f
+      internalID: 0
     PhysicsOutlines: []
