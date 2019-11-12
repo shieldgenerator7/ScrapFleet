@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: space1
   portrait: {fileID: 21300000, guid: 1b73a1e860db4b84ea8c04b6b2ec262d, type: 3}
+  border: {fileID: 3286163911610860551, guid: 0ba8ab7f33a979049ae715097f111c98, type: 3}
   tags: []
   effect: 
   count: 50

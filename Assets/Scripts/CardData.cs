@@ -7,6 +7,7 @@ public class CardData : ScriptableObject
 {
     public new string name;
     public Sprite portrait;
+    public Sprite border;
     public List<string> tags;
     [TextArea(0,5)]
     public string effect;

@@ -40,6 +40,7 @@ public class CardGenerator : MonoBehaviour
 
     [Header("Canvas Elements")]
     public Image imgPortrait;
+    public SpriteRenderer imgBorder;
     public Text txtName;
     public Text txtTags;
     public Text txtEffect;
@@ -164,11 +165,14 @@ public class CardGenerator : MonoBehaviour
             //Set enabled
             imgPortrait.enabled = txtName.enabled = txtTags.enabled = txtEffect.enabled = cardData.showText;
             imgPortraitGiant.enabled = !cardData.showText;
+            imgBorder.enabled = cardData.border != null;
             //Portrait
             imgPortrait.sprite = cardData.portrait;
             imgPortrait.enabled = imgPortrait.sprite != null && imgPortrait.enabled;
             imgPortraitGiant.sprite = cardData.portrait;
             imgPortraitGiant.enabled = imgPortraitGiant.sprite != null && imgPortraitGiant.enabled;
+            //Border
+            imgBorder.sprite = cardData.border;
             //Name
             txtName.text = cardData.name;
             //Tags

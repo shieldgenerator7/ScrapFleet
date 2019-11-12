@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CardBack
   m_EditorClassIdentifier: 
   name: 
-  portrait: {fileID: 0}
+  portrait: {fileID: 3286163911610860551, guid: 5edc79379a719ae429b5788f1ba73851,
+    type: 3}
   tags: []
   effect: 
   count: 0
