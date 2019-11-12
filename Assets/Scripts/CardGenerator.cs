@@ -67,8 +67,9 @@ public class CardGenerator : MonoBehaviour
     public static void generateCard()
     {
         FindObjectOfType<CardGenerator>().generate();
-        UnityEditor.EditorApplication.QueuePlayerLoopUpdate();
-        UnityEditor.SceneView.RepaintAll();
+        //2019-11-12: copied from https://forum.unity.com/threads/solved-how-to-force-update-in-edit-mode.561436/#post-5110952
+        EditorApplication.QueuePlayerLoopUpdate();
+        SceneView.RepaintAll();
     }
 
     public void generate(CardData stats = null)
