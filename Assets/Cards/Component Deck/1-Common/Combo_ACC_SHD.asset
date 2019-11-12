@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Electro-Magnetic Adjuster
   portrait: {fileID: 21300000, guid: ef5f917bbd9e8f44a8a1070b0c7458f5, type: 3}
+  border: {fileID: 0}
   tags: []
   effect: 
-  count: 25
+  count: 5
   showText: 1
   pilot: 0
   autopilot: 0

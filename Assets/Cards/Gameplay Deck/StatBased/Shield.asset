@@ -17,7 +17,7 @@ MonoBehaviour:
   border: {fileID: 3286163911610860551, guid: 0ba8ab7f33a979049ae715097f111c98, type: 3}
   tags: []
   effect: 
-  count: 50
+  count: 80
   showText: 0
   pilot: 0
   autopilot: 0

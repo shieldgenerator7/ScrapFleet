@@ -18,7 +18,7 @@ MonoBehaviour:
   tags:
   - PILOT
   effect: 
-  count: 3
+  count: 1
   showText: 1
   pilot: 1
   autopilot: 0

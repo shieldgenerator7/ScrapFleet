@@ -17,7 +17,7 @@ MonoBehaviour:
   border: {fileID: 0}
   tags: []
   effect: 
-  count: 25
+  count: 10
   showText: 1
   pilot: 0
   autopilot: 0
