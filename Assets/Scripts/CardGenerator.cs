@@ -67,6 +67,8 @@ public class CardGenerator : MonoBehaviour
     public static void generateCard()
     {
         FindObjectOfType<CardGenerator>().generate();
+        UnityEditor.EditorApplication.QueuePlayerLoopUpdate();
+        UnityEditor.SceneView.RepaintAll();
     }
 
     public void generate(CardData stats = null)
