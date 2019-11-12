@@ -28,6 +28,13 @@ public class DeckGenerator : MonoBehaviour
             return cardGenerator;
         }
     }
+    
+    [MenuItem("SG7/Generate Deck %g")]
+    public static void generateDeck()
+    {
+        FindObjectOfType<DeckGenerator>().generate();
+    }
+
     [ContextMenu("GENERATE CONTEXT MENU")]
     public void generate()
     {
