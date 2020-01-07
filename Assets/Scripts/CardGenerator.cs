@@ -182,7 +182,10 @@ public class CardGenerator : MonoBehaviour
             imgPortraitGiant.sprite = cardData.portrait;
             imgPortraitGiant.enabled = imgPortraitGiant.sprite != null && imgPortraitGiant.enabled;
             //Border
-            imgBorder.sprite = cardData.border;
+            if (cardData.border)
+            {
+                imgBorder.sprite = cardData.border;
+            }
             //Name
             txtName.text = cardData.name;
             //Tags
