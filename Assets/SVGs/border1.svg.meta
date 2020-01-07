@@ -8,7 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
-  svgType: 0
+  svgType: 1
   texturedSpriteMeshType: 0
   svgPixelsPerUnit: 100
   gradientResolution: 128
@@ -32,22 +32,22 @@ ScriptedImporter:
   textureWidth: 256
   textureHeight: 256
   wrapMode: 1
-  filterMode: 0
+  filterMode: 1
   sampleCount: 8
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: border1
+      name: border1Sprite
       originalName: 
       pivot: {x: 0, y: 0}
       alignment: 6
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 14, y: 14, z: 14, w: 14}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 172
-        height: 256
+        width: 156
+        height: 232
       spriteID: d871b13bc9c26b34f87087c46bec275d
       internalID: 0
     PhysicsOutlines: []
