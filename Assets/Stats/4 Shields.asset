@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8963681762f7de4eab2c5babd039914, type: 3}
+  m_Name: 4 Shields
+  m_EditorClassIdentifier: 
+  stat: 3
+  name: Shields
+  symbol: {fileID: 21300000, guid: 361dcca96d6802944844c2a9e0c4b386, type: 3}
+  textSymbol: '[SHD]'
+  description: How many Shield Cards to add to the ship's deck when building it or
+    retrofitting it. Shield Cards protect the ship.

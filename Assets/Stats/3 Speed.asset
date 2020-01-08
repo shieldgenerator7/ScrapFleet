@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8963681762f7de4eab2c5babd039914, type: 3}
+  m_Name: 3 Speed
+  m_EditorClassIdentifier: 
+  stat: 2
+  name: Speed
+  symbol: {fileID: 21300000, guid: a2b0d0070fa00e74fa7adb4d84a11d04, type: 3}
+  textSymbol: '[SPD]'
+  description: How many Space Cards to add to the ship's deck when defending. Space
+    Cards cause attackers to miss.

@@ -586,6 +586,11 @@ MonoBehaviour:
   shields: 0
   hull: 0
   cardData: {fileID: 11400000, guid: 8648ac366f2036a42939d15170a923be, type: 2}
+  stats:
+  - {fileID: 11400000, guid: 69cfcb36bac5a2048ab1f92146ae0545, type: 2}
+  - {fileID: 11400000, guid: 43a952692bc71f640a725c70399fadb2, type: 2}
+  - {fileID: 11400000, guid: 8839fc4ffe56e4f4c9ef590355127845, type: 2}
+  - {fileID: 11400000, guid: e616bb3d56ae1714b8b510e7d2777462, type: 2}
   safeEdge: 0.25
   decrement: 0.3
   startY: 3.25

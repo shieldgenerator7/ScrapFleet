@@ -22,6 +22,9 @@ public class CardGenerator : MonoBehaviour
 
     public CardData cardData;
 
+    [Header("Stats")]
+    public List<StatData> stats;
+
     [Header("Generation")]
     public float safeEdge = 0.25f;
     public float decrement = 0.23f;
@@ -192,6 +195,20 @@ public class CardGenerator : MonoBehaviour
             txtTags.text = cardData.TagString;
             //Effect
             txtEffect.text = cardData.effect;
+            //Stat Description
+            if (cardData.autoGenerateStatDescriptions)
+            {
+                foreach (StatData stat in this.stats)
+                {
+                    if (stat.getStat(cardData) > 0)
+                    {
+                        txtEffect.text += "\n"
+                            + stat.textSymbol
+                            + " <b>" + stat.name + "</b>: "
+                            + stat.description;
+                    }
+                }
+            }
         }
     }
 

@@ -13,6 +13,7 @@ public class CardData : ScriptableObject
     public string effect;
     public int count;
     public bool showText = true;
+    public bool autoGenerateStatDescriptions = true;
 
     [Header("Stats")]
     public bool pilot;
