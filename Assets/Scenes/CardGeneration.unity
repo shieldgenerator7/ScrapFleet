@@ -1306,13 +1306,13 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7877f529d37ef174992a63b114306e2a, type: 3}
     m_FontSize: 19
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1

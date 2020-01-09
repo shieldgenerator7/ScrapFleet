@@ -9,6 +9,8 @@ public class StatData : ScriptableObject
     public new string name;//the name of the stat
     public Sprite symbol;//the graphic used to represent the stat on the card
     public string textSymbol;//the text string that gets replaced by the symbol in descriptions
+    public Color color = Color.white;
+    public string colorHex = "FFFFFFFF";
     [TextArea(3,5)]
     public string description;//the stat description
 

@@ -16,5 +16,7 @@ MonoBehaviour:
   name: Shields
   symbol: {fileID: 21300000, guid: 361dcca96d6802944844c2a9e0c4b386, type: 3}
   textSymbol: '[SHD]'
+  color: {r: 0.24705882, g: 0.6627451, b: 0.9607843, a: 1}
+  colorHex: 3FA9F5
   description: How many Shield Cards to add to the ship's deck when building it or
     retrofitting it. Shield Cards protect the ship.

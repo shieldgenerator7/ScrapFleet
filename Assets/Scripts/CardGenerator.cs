@@ -204,7 +204,7 @@ public class CardGenerator : MonoBehaviour
                     {
                         txtEffect.text += "\n"
                             + stat.textSymbol
-                            + " <b>" + stat.name + "</b>: "
+                            + " <color=#"+stat.colorHex+"><b>" + stat.name + "</b></color>: "
                             + stat.description;
                     }
                 }
