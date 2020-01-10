@@ -19,4 +19,10 @@ MonoBehaviour:
   color: {r: 0.24705882, g: 0.6627451, b: 0.9607843, a: 1}
   colorHex: 3FA9F5
   description: How many Shield Cards to add to the ship's deck when building it or
-    retrofitting it. Shield Cards protect the ship.
+    retrofitting it. Shield Cards protect the ship. If a component on a ship would
+    be destroyed, destroy one of its Shield Cards instead.
+  descriptionList:
+  - How many Shield Cards to add to the ship's deck when building it or retrofitting
+    it.
+  - Shield Cards protect the ship.
+  - If a component on a ship would be destroyed, destroy one of its Shield Cards instead.

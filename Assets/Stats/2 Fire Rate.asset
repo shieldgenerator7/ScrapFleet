@@ -19,3 +19,5 @@ MonoBehaviour:
   color: {r: 1, g: 0.5764706, b: 0.11764706, a: 1}
   colorHex: FF931E
   description: How many shots to take when attacking.
+  descriptionList:
+  - How many shots to take when attacking.

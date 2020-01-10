@@ -11,8 +11,9 @@ public class StatData : ScriptableObject
     public int iconIndex;//the index of this stat's symbol in the stat sprite sheet (base 0)
     public Color color = Color.white;
     public string colorHex = "FFFFFFFF";
-    [TextArea(3,5)]
+    [TextArea(3, 5)]
     public string description;//the stat description
+    public List<string> descriptionList;
 
     public int getStat(CardData card)
     {
@@ -30,6 +31,20 @@ public class StatData : ScriptableObject
                 return card.hull;
             default:
                 throw new UnityException("StatData.stat not set to a countable stat! stat: " + stat);
+        }
+    }
+
+    public void generateDescriptionList()
+    {
+        descriptionList = new List<string>();
+        string[] split = description.Split('.');
+        foreach (string s in split)
+        {
+            string trim = s.Trim();
+            if (trim.Length > 0 && trim != "")
+            {
+                descriptionList.Add(trim + ".");
+            }
         }
     }
 }

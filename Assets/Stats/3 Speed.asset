@@ -19,4 +19,9 @@ MonoBehaviour:
   color: {r: 0.47843137, g: 0.7882353, b: 0.2627451, a: 1}
   colorHex: 7AC943
   description: How many Space Cards to add to the ship's deck when defending. Space
-    Cards cause attackers to miss.
+    Cards cause attackers to miss. Space Cards return to the defending ship's deck
+    when destroyed.
+  descriptionList:
+  - How many Space Cards to add to the ship's deck when defending.
+  - Space Cards cause attackers to miss.
+  - Space Cards return to the defending ship's deck when destroyed.

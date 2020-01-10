@@ -197,17 +197,24 @@ public class CardGenerator : MonoBehaviour
             //Effect
             txtEffect.text = cardData.effect;
             //Stat Description
-            if (cardData.autoGenerateStatDescriptions)
+            if (cardData.autoGenerateStatDescriptionLevel > 0)
             {
                 bool newLine = txtEffect.text.Trim().Length > 0;
                 foreach (StatData stat in this.stats)
                 {
                     if (stat.getStat(cardData) > 0)
                     {
-                        txtEffect.text += ((newLine)?"\n":"")
-                            + "<sprite="+stat.iconIndex+">"
-                            + " <color=#"+stat.colorHex+"><b>" + stat.name + "</b></color>: "
-                            + stat.description;
+                        txtEffect.text += ((newLine) ? "\n" : "")
+                            + "<sprite=" + stat.iconIndex + ">"
+                            + " <color=#" + stat.colorHex + "><b>" + stat.name + "</b></color>:";
+                        for (int i = 0;
+                            i < cardData.autoGenerateStatDescriptionLevel
+                            && i < stat.descriptionList.Count;
+                            i++
+                            )
+                        {
+                            txtEffect.text += " "+stat.descriptionList[i];
+                        }
                         newLine = true;
                     }
                 }

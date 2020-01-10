@@ -19,3 +19,5 @@ MonoBehaviour:
   color: {r: 0.92941177, g: 0.11764706, b: 0.4745098, a: 1}
   colorHex: ED1E79
   description: How many cards to reveal when attacking before choosing one to destroy.
+  descriptionList:
+  - How many cards to reveal when attacking before choosing one to destroy.
