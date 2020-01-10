@@ -20,7 +20,7 @@ MonoBehaviour:
   effect: 
   count: 0
   showText: 1
-  autoGenerateStatDescriptions: 0
+  autoGenerateStatDescriptionLevel: 0
   pilot: 1
   autopilot: 0
   accuracy: 1

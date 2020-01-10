@@ -19,6 +19,7 @@ MonoBehaviour:
   effect: 
   count: 15
   showText: 1
+  autoGenerateStatDescriptionLevel: 2
   pilot: 0
   autopilot: 0
   accuracy: 0

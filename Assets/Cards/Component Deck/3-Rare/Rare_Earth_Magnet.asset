@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Rare Earth Magnet
   portrait: {fileID: 21300000, guid: c75f7ae261531a84a8882855c0c08d93, type: 3}
+  border: {fileID: 0}
   tags: []
   effect: When this ship destroys a component, the component goes to your scrap pile
     instead of the discard pile.
   count: 5
   showText: 1
+  autoGenerateStatDescriptionLevel: 0
   pilot: 0
   autopilot: 0
   accuracy: 0
