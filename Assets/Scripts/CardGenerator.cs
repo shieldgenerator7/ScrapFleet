@@ -47,7 +47,7 @@ public class CardGenerator : MonoBehaviour
     public Image imgPortrait;
     public SpriteRenderer imgBorder;
     public Text txtName;
-    public Text txtTags;
+    public TextMeshProUGUI txtTags;
     public TextMeshProUGUI txtEffect;
     public Image imgNameplate;
     public Image imgPortraitGiant;

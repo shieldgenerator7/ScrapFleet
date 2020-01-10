@@ -229,7 +229,7 @@ MonoBehaviour:
       m_Width: 128
       m_Height: 128
       m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 115
+      m_HorizontalBearingY: 110
       m_HorizontalAdvance: 128
     m_GlyphRect:
       m_X: 200
@@ -244,7 +244,7 @@ MonoBehaviour:
       m_Width: 128
       m_Height: 128
       m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 115
+      m_HorizontalBearingY: 110
       m_HorizontalAdvance: 128
     m_GlyphRect:
       m_X: 400
