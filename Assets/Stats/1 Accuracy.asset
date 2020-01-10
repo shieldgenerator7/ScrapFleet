@@ -15,7 +15,7 @@ MonoBehaviour:
   stat: 0
   name: Accuracy
   symbol: {fileID: 21300000, guid: 840bc6dd3ee00f745a59b7de0f9105fe, type: 3}
-  textSymbol: '[ACC]'
+  iconIndex: 0
   color: {r: 0.92941177, g: 0.11764706, b: 0.4745098, a: 1}
   colorHex: ED1E79
   description: How many cards to reveal when attacking before choosing one to destroy.

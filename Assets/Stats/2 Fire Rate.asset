@@ -15,7 +15,7 @@ MonoBehaviour:
   stat: 1
   name: Fire Rate
   symbol: {fileID: 21300000, guid: 618a20b0b02981b42b487a6a6b911c5b, type: 3}
-  textSymbol: '[FRR]'
+  iconIndex: 1
   color: {r: 1, g: 0.5764706, b: 0.11764706, a: 1}
   colorHex: FF931E
   description: How many shots to take when attacking.

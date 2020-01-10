@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CardGenerator : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class CardGenerator : MonoBehaviour
     public SpriteRenderer imgBorder;
     public Text txtName;
     public Text txtTags;
-    public Text txtEffect;
+    public TextMeshProUGUI txtEffect;
     public Image imgNameplate;
     public Image imgPortraitGiant;
 
@@ -198,14 +199,16 @@ public class CardGenerator : MonoBehaviour
             //Stat Description
             if (cardData.autoGenerateStatDescriptions)
             {
+                bool newLine = txtEffect.text.Trim().Length > 0;
                 foreach (StatData stat in this.stats)
                 {
                     if (stat.getStat(cardData) > 0)
                     {
-                        txtEffect.text += "\n"
-                            + stat.textSymbol
+                        txtEffect.text += ((newLine)?"\n":"")
+                            + "<sprite="+stat.iconIndex+">"
                             + " <color=#"+stat.colorHex+"><b>" + stat.name + "</b></color>: "
                             + stat.description;
+                        newLine = true;
                     }
                 }
             }
