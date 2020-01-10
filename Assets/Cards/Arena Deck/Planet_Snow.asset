@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Snow Planet
   portrait: {fileID: 21300000, guid: 05c27a57853be51498bc10e98a2049f8, type: 3}
+  border: {fileID: 0}
   tags:
   - ARENA 2
   effect: All ships lose 1 speed.
   count: 1
   showText: 1
+  autoGenerateStatDescriptionLevel: 0
   pilot: 0
   autopilot: 0
   accuracy: 0

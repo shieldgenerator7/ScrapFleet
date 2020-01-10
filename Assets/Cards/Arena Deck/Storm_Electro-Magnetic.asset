@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Electro-Magnetic Storm
   portrait: {fileID: 21300000, guid: 85b01f2790ae3f140969c2e62e3a2abf, type: 3}
+  border: {fileID: 0}
   tags:
   - ARENA 5
   effect: On the beginning of your turn, all your ships regenerate 1 shield.
   count: 1
   showText: 1
+  autoGenerateStatDescriptionLevel: 0
   pilot: 0
   autopilot: 0
   accuracy: 0

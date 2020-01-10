@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Gravity Well
   portrait: {fileID: 21300000, guid: 85b01f2790ae3f140969c2e62e3a2abf, type: 3}
+  border: {fileID: 0}
   tags:
   - ARENA 4
   effect: If you miss, you may make a 1 accuracy / 1 fire rate attack on any other
     ship.
   count: 1
   showText: 1
+  autoGenerateStatDescriptionLevel: 0
   pilot: 0
   autopilot: 0
   accuracy: 0
