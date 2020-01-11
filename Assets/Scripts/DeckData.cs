@@ -7,5 +7,6 @@ public class DeckData : ScriptableObject
 {
     public new string name;
     public Sprite cardBack;
+    public string cardLayoutName;
     public List<CardData> cards;
 }

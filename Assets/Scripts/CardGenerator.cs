@@ -43,14 +43,50 @@ public class CardGenerator : MonoBehaviour
     public GameObject ShieldsPrefab;
     public GameObject HullPrefab;
 
-    [Header("Canvas Elements")]
-    public Image imgPortrait;
+    [Header("Card Layouts")]
     public SpriteRenderer imgBorder;
-    public Text txtName;
-    public TextMeshProUGUI txtTags;
-    public TextMeshProUGUI txtEffect;
-    public Image imgNameplate;
-    public Image imgPortraitGiant;
+    public List<CardLayout> layouts;
+    private int layoutIndex = 0;
+    public string LayoutName
+    {
+        get => layouts[layoutIndex].layoutName;
+        set
+        {
+            for (int i = 0; i < layouts.Count; i++)
+            {
+                CardLayout layout = layouts[i];
+                if (layout.layoutName == value)
+                {
+                    layout.toggleEnabled(true);
+                    layoutIndex = i;
+                }
+                else
+                {
+                    layout.toggleEnabled(false);
+                }
+            }
+        }
+    }
+    public CardLayout Layout
+    {
+        get => layouts[layoutIndex];
+        set
+        {
+            for (int i = 0; i < layouts.Count; i++)
+            {
+                CardLayout layout = layouts[i];
+                if (layout == value)
+                {
+                    layout.toggleEnabled(true);
+                    layoutIndex = i;
+                }
+                else
+                {
+                    layout.toggleEnabled(false);
+                }
+            }
+        }
+    }
 
     [Header("Guides")]
     public GameObject guide;
@@ -88,123 +124,125 @@ public class CardGenerator : MonoBehaviour
             stats = cardData;
         }
         setStats(stats);
+        //Set card layout
+        LayoutName = stats.cardLayoutName;
         //Center the camera
         Vector3 camPos = Camera.main.transform.position;
         camPos.x = cardSize.x / 2;
         camPos.y = cardSize.y / 2;
         Camera.main.transform.position = camPos;
         //Generate the card stats
-        float currentY = startY;//where the next stat is going to be placed
-        //Pilot
-        if (pilot)
+        if (Layout.showsStats)
         {
-            GameObject stat = Instantiate(PilotPrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-            //Show the nameplate for pilots only
-            imgNameplate.enabled = true;
-        }
-        else
-        {
-            imgNameplate.enabled = false;
-        }
-        //Auto Pilot
-        if (autopilot)
-        {
-            GameObject stat = Instantiate(AutoPilotPrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-        }
-        //Accuracy
-        for (int i = 0; i < accuracy; i++)
-        {
-            GameObject stat = Instantiate(AccuracyPrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-        }
-        //Fire Rate
-        for (int i = 0; i < fireRate; i++)
-        {
-            GameObject stat = Instantiate(FireRatePrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-        }
-        //Speed
-        for (int i = 0; i < speed; i++)
-        {
-            GameObject stat = Instantiate(SpeedPrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-        }
-        //Shield
-        for (int i = 0; i < shields; i++)
-        {
-            GameObject stat = Instantiate(ShieldsPrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-        }
-        //Hull
-        for (int i = 0; i < hull; i++)
-        {
-            GameObject stat = Instantiate(HullPrefab);
-            Vector3 pos = stat.transform.position;
-            pos.y = currentY;
-            stat.transform.position = pos;
-            currentY -= decrement;
-        }
+            float currentY = startY;//where the next stat is going to be placed
+                                    //Pilot
+            if (pilot)
+            {
+                GameObject stat = Instantiate(PilotPrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+                //Show the nameplate for pilots only
+                Layout.imgNameplate.enabled = true;
+            }
+            else
+            {
+                Layout.imgNameplate.enabled = false;
+            }
+            //Auto Pilot
+            if (autopilot)
+            {
+                GameObject stat = Instantiate(AutoPilotPrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+            }
+            //Accuracy
+            for (int i = 0; i < accuracy; i++)
+            {
+                GameObject stat = Instantiate(AccuracyPrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+            }
+            //Fire Rate
+            for (int i = 0; i < fireRate; i++)
+            {
+                GameObject stat = Instantiate(FireRatePrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+            }
+            //Speed
+            for (int i = 0; i < speed; i++)
+            {
+                GameObject stat = Instantiate(SpeedPrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+            }
+            //Shield
+            for (int i = 0; i < shields; i++)
+            {
+                GameObject stat = Instantiate(ShieldsPrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+            }
+            //Hull
+            for (int i = 0; i < hull; i++)
+            {
+                GameObject stat = Instantiate(HullPrefab);
+                Vector3 pos = stat.transform.position;
+                pos.y = currentY;
+                stat.transform.position = pos;
+                currentY -= decrement;
+            }
 
-        //Do the same for the other side
-        copyFlipped(cardSize / 2);
+            //Do the same for the other side
+            copyFlipped(cardSize / 2);
+        }
 
         //Center the canvas
-        Vector3 canvasPos = txtName.canvas.transform.position;
+        Vector3 canvasPos = Layout.canvas.transform.position;
         canvasPos.x = cardSize.x / 2;
         canvasPos.y = cardSize.y / 2;
-        txtName.canvas.transform.position = canvasPos;
+        Layout.canvas.transform.position = canvasPos;
         if (cardData)
         {
             //Set the canvas element data
             //Set enabled
-            imgPortrait.enabled = txtName.enabled = txtTags.enabled = txtEffect.enabled = cardData.showText;
-            imgPortraitGiant.enabled = !cardData.showText;
+            Layout.imgPortrait.enabled = Layout.txtName.enabled = Layout.txtTags.enabled = Layout.txtEffect.enabled = cardData.showText;
             imgBorder.enabled = cardData.border != null;
             //Portrait
-            imgPortrait.sprite = cardData.portrait;
-            imgPortrait.enabled = imgPortrait.sprite != null && imgPortrait.enabled;
-            imgPortraitGiant.sprite = cardData.portrait;
-            imgPortraitGiant.enabled = imgPortraitGiant.sprite != null && imgPortraitGiant.enabled;
+            Layout.imgPortrait.sprite = cardData.portrait;
+            Layout.imgPortrait.enabled = Layout.imgPortrait.sprite != null && Layout.imgPortrait.enabled;
             //Border
             if (cardData.border)
             {
                 imgBorder.sprite = cardData.border;
             }
             //Name
-            txtName.text = cardData.name;
+            Layout.txtName.text = cardData.name;
             //Tags
-            txtTags.text = cardData.TagString;
+            Layout.txtTags.text = cardData.TagString;
             //Effect
-            txtEffect.text = cardData.effect;
+            Layout.txtEffect.text = cardData.effect;
             //Stat Description
             if (cardData.autoGenerateStatDescriptionLevel > 0)
             {
-                bool newLine = txtEffect.text.Trim().Length > 0;
+                bool newLine = Layout.txtEffect.text.Trim().Length > 0;
                 foreach (StatData stat in this.stats)
                 {
                     if (stat.getStat(cardData) > 0)
                     {
-                        txtEffect.text += ((newLine) ? "\n" : "")
+                        Layout.txtEffect.text += ((newLine) ? "\n" : "")
                             + "<sprite=" + stat.iconIndex + ">"
                             + " <color=#" + stat.colorHex + "><b>" + stat.name + "</b></color>:";
                         for (int i = 0;
@@ -213,7 +251,7 @@ public class CardGenerator : MonoBehaviour
                             i++
                             )
                         {
-                            txtEffect.text += " "+stat.descriptionList[i];
+                            Layout.txtEffect.text += " " + stat.descriptionList[i];
                         }
                         newLine = true;
                     }

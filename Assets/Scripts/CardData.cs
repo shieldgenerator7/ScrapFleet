@@ -14,6 +14,7 @@ public class CardData : ScriptableObject
     public int count;
     public bool showText = true;
     public int autoGenerateStatDescriptionLevel = 1;
+    public string cardLayoutName;
 
     [Header("Stats")]
     public bool pilot;

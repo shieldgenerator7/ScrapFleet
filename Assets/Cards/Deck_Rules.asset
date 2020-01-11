@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f02b0d10ee2e6284eaf3eb5d0a7254bf, type: 3}
-  m_Name: Deck_Gameplay
+  m_Name: Deck_Rules
   m_EditorClassIdentifier: 
-  name: Gameplay Deck
+  name: Rule Deck
   cardBack: {fileID: 21300000, guid: 7054d5169a9cab842a1c0b24448c8b93, type: 3}
-  cardLayoutName: Gameplay
+  cardLayoutName: Rules
   cards:
-  - {fileID: 11400000, guid: 17a4e8cd4b6a3c74e88bbb10341ffd72, type: 2}
-  - {fileID: 11400000, guid: c472c45ad808a5c40b8699a998b85bcd, type: 2}
-  - {fileID: 11400000, guid: 8648ac366f2036a42939d15170a923be, type: 2}
+  - {fileID: 11400000, guid: 01d0ca61ecbd3fb429e9d0936510fd50, type: 2}

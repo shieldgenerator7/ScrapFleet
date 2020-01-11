@@ -19,7 +19,8 @@ public class CardDataEditor : Editor
                 CardGenerator cg = FindObjectOfType<CardGenerator>();
                 cg.cardData = cardData;
                 cg.generate();
-                Selection.activeGameObject = cg.gameObject;
+                EditorApplication.QueuePlayerLoopUpdate();
+                SceneView.RepaintAll();
             }
         }
     }
