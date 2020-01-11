@@ -19,8 +19,8 @@ MonoBehaviour:
   - INFO
   effect: 
   count: 4
-  showText: 1
   autoGenerateStatDescriptionLevel: 3
+  cardLayoutName: Rules
   pilot: 1
   autopilot: 0
   accuracy: 1

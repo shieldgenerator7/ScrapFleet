@@ -18,8 +18,8 @@ MonoBehaviour:
   tags: []
   effect: 
   count: 70
-  showText: 0
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: Gameplay
   pilot: 0
   autopilot: 0
   accuracy: 0
