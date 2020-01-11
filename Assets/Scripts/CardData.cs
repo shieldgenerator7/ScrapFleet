@@ -12,6 +12,7 @@ public class CardData : ScriptableObject
     [TextArea(0, 5)]
     public string effect;
     public int count;
+    [Range(0,3)]
     public int autoGenerateStatDescriptionLevel = 1;
     public string cardLayoutName;
 
