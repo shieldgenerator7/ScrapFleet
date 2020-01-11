@@ -217,45 +217,62 @@ public class CardGenerator : MonoBehaviour
         if (cardData)
         {
             //Set the canvas element data
-            //Set enabled
-            Layout.imgPortrait.enabled = Layout.txtName.enabled = Layout.txtTags.enabled = Layout.txtEffect.enabled = cardData.showText;
-            imgBorder.enabled = cardData.border != null;
             //Portrait
-            Layout.imgPortrait.sprite = cardData.portrait;
-            Layout.imgPortrait.enabled = Layout.imgPortrait.sprite != null && Layout.imgPortrait.enabled;
+            if (Layout.imgPortrait)
+            {
+                Layout.imgPortrait.enabled = cardData.portrait;
+                Layout.imgPortrait.sprite = cardData.portrait;
+            }
+            //Card Name
+            if (Layout.txtName)
+            {
+                Layout.txtName.enabled = cardData.name != null && cardData.name != "";
+                Layout.txtName.text = cardData.name;
+            }
+            //Tags
+            if (Layout.txtTags)
+            {
+                string tagString = cardData.TagString;
+                Layout.txtTags.enabled = tagString != null && tagString != "";
+                Layout.txtTags.text = cardData.TagString;
+            }
+            //Effect
+            if (Layout.txtEffect)
+            {
+                Layout.txtEffect.enabled =
+                    (cardData.effect != null && cardData.effect != "")
+                    || cardData.autoGenerateStatDescriptionLevel > 0;
+                Layout.txtEffect.text = cardData.effect;
+
+                //Stat Description
+                if (cardData.autoGenerateStatDescriptionLevel > 0)
+                {
+                    bool newLine = Layout.txtEffect.text.Trim().Length > 0;
+                    foreach (StatData stat in this.stats)
+                    {
+                        if (stat.getStat(cardData) > 0)
+                        {
+                            Layout.txtEffect.text += ((newLine) ? "\n" : "")
+                                + "<sprite=" + stat.iconIndex + ">"
+                                + " <color=#" + stat.colorHex + "><b>" + stat.name + "</b></color>:";
+                            for (int i = 0;
+                                i < cardData.autoGenerateStatDescriptionLevel
+                                && i < stat.descriptionList.Count;
+                                i++
+                                )
+                            {
+                                Layout.txtEffect.text += " " + stat.descriptionList[i];
+                            }
+                            newLine = true;
+                        }
+                    }
+                }
+            }
             //Border
+            imgBorder.enabled = cardData.border != null;
             if (cardData.border)
             {
                 imgBorder.sprite = cardData.border;
-            }
-            //Name
-            Layout.txtName.text = cardData.name;
-            //Tags
-            Layout.txtTags.text = cardData.TagString;
-            //Effect
-            Layout.txtEffect.text = cardData.effect;
-            //Stat Description
-            if (cardData.autoGenerateStatDescriptionLevel > 0)
-            {
-                bool newLine = Layout.txtEffect.text.Trim().Length > 0;
-                foreach (StatData stat in this.stats)
-                {
-                    if (stat.getStat(cardData) > 0)
-                    {
-                        Layout.txtEffect.text += ((newLine) ? "\n" : "")
-                            + "<sprite=" + stat.iconIndex + ">"
-                            + " <color=#" + stat.colorHex + "><b>" + stat.name + "</b></color>:";
-                        for (int i = 0;
-                            i < cardData.autoGenerateStatDescriptionLevel
-                            && i < stat.descriptionList.Count;
-                            i++
-                            )
-                        {
-                            Layout.txtEffect.text += " " + stat.descriptionList[i];
-                        }
-                        newLine = true;
-                    }
-                }
             }
         }
     }
