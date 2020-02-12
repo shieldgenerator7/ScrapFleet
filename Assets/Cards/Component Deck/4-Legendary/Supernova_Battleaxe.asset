@@ -19,11 +19,11 @@ MonoBehaviour:
   - LEGENDARY
   effect: If this ship destroys another ship, it may make another attack.
   count: 1
-  showText: 1
   autoGenerateStatDescriptionLevel: 1
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 5
+  aim: 5
   fireRate: 5
   speed: 0
   shields: 0

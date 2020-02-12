@@ -20,7 +20,7 @@ public class CardData : ScriptableObject
     public bool pilot;
     public bool autopilot;
     [Range(0, 5)]
-    public int accuracy;
+    public int aim;
     [Range(0, 5)]
     public int fireRate;
     [Range(0, 5)]

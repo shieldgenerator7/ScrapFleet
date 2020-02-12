@@ -19,11 +19,11 @@ MonoBehaviour:
   effect: If this ship reveals a component, it may make a 1 accuracy / 1 fire rate
     attack on any other ship.
   count: 5
-  showText: 1
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 3
+  aim: 3
   fireRate: 0
   speed: 0
   shields: 0

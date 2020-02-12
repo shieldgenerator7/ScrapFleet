@@ -11,7 +11,7 @@ public class CardGenerator : MonoBehaviour
     public bool pilot;
     public bool autopilot;
     [Range(0, 5)]
-    public int accuracy;
+    public int aim;
     [Range(0, 5)]
     public int fireRate;
     [Range(0, 5)]
@@ -37,7 +37,7 @@ public class CardGenerator : MonoBehaviour
     [Header("Prefabs")]
     public GameObject PilotPrefab;
     public GameObject AutoPilotPrefab;
-    public GameObject AccuracyPrefab;
+    public GameObject AimPrefab;
     public GameObject FireRatePrefab;
     public GameObject SpeedPrefab;
     public GameObject ShieldsPrefab;
@@ -96,7 +96,7 @@ public class CardGenerator : MonoBehaviour
         cardData = data;
         pilot = data.pilot;
         autopilot = data.autopilot;
-        accuracy = data.accuracy;
+        aim = data.aim;
         fireRate = data.fireRate;
         speed = data.speed;
         shields = data.shields;
@@ -159,10 +159,10 @@ public class CardGenerator : MonoBehaviour
                 stat.transform.position = pos;
                 currentY -= decrement;
             }
-            //Accuracy
-            for (int i = 0; i < accuracy; i++)
+            //Aim
+            for (int i = 0; i < aim; i++)
             {
-                GameObject stat = Instantiate(AccuracyPrefab);
+                GameObject stat = Instantiate(AimPrefab);
                 Vector3 pos = stat.transform.position;
                 pos.y = currentY;
                 stat.transform.position = pos;
@@ -288,7 +288,7 @@ public class CardGenerator : MonoBehaviour
         {
             pilot = false;
             autopilot = false;
-            accuracy = 0;
+            aim = 0;
             fireRate = 0;
             speed = 0;
             shields = 0;

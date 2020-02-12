@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Combo_ACC_SPD
+  m_Name: Pilot_Master_Aim
   m_EditorClassIdentifier: 
-  name: Auto-Positioning Array
-  portrait: {fileID: 21300000, guid: b64ee223bbd53af46bd68d866075e5ae, type: 3}
-  border: {fileID: 0}
+  name: Aim Master Pilot
+  portrait: {fileID: 21300000, guid: b8291733250c23e4db57f7245ddf96f8, type: 3}
+  border: {fileID: 21300000, guid: 1604529651ada5f44a73bd8a424af486, type: 3}
   tags: []
   effect: 
-  count: 10
-  autoGenerateStatDescriptionLevel: 2
+  count: 2
+  autoGenerateStatDescriptionLevel: 0
   cardLayoutName: Component
-  pilot: 0
+  pilot: 1
   autopilot: 0
-  accuracy: 1
+  aim: 2
   fireRate: 0
-  speed: 1
-  shields: 0
-  hull: 0
+  speed: 0
+  shields: 1
+  hull: 5

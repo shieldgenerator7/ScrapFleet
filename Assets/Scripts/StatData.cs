@@ -19,8 +19,8 @@ public class StatData : ScriptableObject
     {
         switch (stat)
         {
-            case Stat.ACCURACY:
-                return card.accuracy;
+            case Stat.AIM:
+                return card.aim;
             case Stat.FIRE_RATE:
                 return card.fireRate;
             case Stat.SPEED:

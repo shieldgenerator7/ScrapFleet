@@ -19,20 +19,22 @@ MonoBehaviour:
   - You are Player 4
   effect: 'Stat Quick Reference:
 
-    -Accuracy: Reveal X cards on attack.
+    -Aim: Reveal X cards on attack.
 
-    -Fire Rate: Take X shots on attack.
+    -Fire
+    Rate: Take X shots on attack.
 
-    -Speed: Add X space cards to a ship on defense. Space cards regenerate.
+    -Speed: Add X space cards to a ship on defense.
+    Space cards regenerate.
 
-    -Shields: Add X shield cards to a launching ship. Shield cards get destroyed instead
-    of components.'
+    -Shields: Add X shield cards to a launching ship.
+    Shield cards get destroyed instead of components.'
   count: 1
-  showText: 1
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 0
+  aim: 0
   fireRate: 0
   speed: 0
   shields: 0

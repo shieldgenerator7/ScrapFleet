@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -937,6 +938,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1003,6 +1005,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1100,7 +1103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pilot: 0
   autopilot: 0
-  accuracy: 0
+  aim: 0
   fireRate: 0
   speed: 0
   shields: 0
@@ -1121,7 +1124,7 @@ MonoBehaviour:
     type: 3}
   AutoPilotPrefab: {fileID: 3438756771111218824, guid: 3e6339e9c8ec1b8438d5315e5c65e906,
     type: 3}
-  AccuracyPrefab: {fileID: 5060337728047577428, guid: 3a5c57a67f4af8f4b86e54b5b4e37d97,
+  AimPrefab: {fileID: 5060337728047577428, guid: 3a5c57a67f4af8f4b86e54b5b4e37d97,
     type: 3}
   FireRatePrefab: {fileID: 2943685130552866278, guid: 155c808ef8e1f9a458a367209e65cd55,
     type: 3}
@@ -1341,6 +1344,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1421,6 +1425,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1487,6 +1492,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1826,6 +1832,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1920,6 +1927,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2708,6 +2716,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3002,12 +3011,7 @@ PrefabInstance:
     - target: {fileID: 5060337728047577428, guid: 3a5c57a67f4af8f4b86e54b5b4e37d97,
         type: 3}
       propertyPath: m_Name
-      value: Accuracy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5060337728047577428, guid: 3a5c57a67f4af8f4b86e54b5b4e37d97,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: Aim
       objectReference: {fileID: 0}
     - target: {fileID: 5060337728047577430, guid: 3a5c57a67f4af8f4b86e54b5b4e37d97,
         type: 3}
