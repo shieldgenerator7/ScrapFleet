@@ -22,7 +22,7 @@ public class CardData : ScriptableObject
     [Range(0, 5)]
     public int aim;
     [Range(0, 5)]
-    public int fireRate;
+    public int shots;
     [Range(0, 5)]
     public int speed;
     [Range(0, 5)]

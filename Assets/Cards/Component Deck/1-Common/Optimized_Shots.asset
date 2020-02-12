@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Combo_FRR_SPD
+  m_Name: Optimized_Shots
   m_EditorClassIdentifier: 
-  name: Engine Lasers
-  portrait: {fileID: 21300000, guid: de9aebf59a27c064d886599d75c48bb5, type: 3}
+  name: Laser Turret
+  portrait: {fileID: 21300000, guid: d3501c97cb8ad2e46b4fa1d94ecc946a, type: 3}
   border: {fileID: 0}
   tags: []
   effect: 
-  count: 15
-  autoGenerateStatDescriptionLevel: 2
+  count: 10
+  autoGenerateStatDescriptionLevel: 3
   cardLayoutName: Component
   pilot: 0
   autopilot: 0
-  accuracy: 0
-  fireRate: 1
-  speed: 1
+  aim: 0
+  shots: 2
+  speed: 0
   shields: 0
   hull: 0

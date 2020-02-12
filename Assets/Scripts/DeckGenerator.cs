@@ -12,7 +12,7 @@ public class DeckGenerator : MonoBehaviour
 
     /// <summary>
     /// The string data of what to write in the cards
-    /// [number of cards]:[pilot?][aim][fire rate][speed][shields][hull]
+    /// [number of cards]:[pilot?][aim][shots][speed][shields][hull]
     /// </summary>
     public List<DeckData> deckData;//25:t11115
 

@@ -13,7 +13,7 @@ public class CardGenerator : MonoBehaviour
     [Range(0, 5)]
     public int aim;
     [Range(0, 5)]
-    public int fireRate;
+    public int shots;
     [Range(0, 5)]
     public int speed;
     [Range(0, 5)]
@@ -38,7 +38,7 @@ public class CardGenerator : MonoBehaviour
     public GameObject PilotPrefab;
     public GameObject AutoPilotPrefab;
     public GameObject AimPrefab;
-    public GameObject FireRatePrefab;
+    public GameObject ShotsPrefab;
     public GameObject SpeedPrefab;
     public GameObject ShieldsPrefab;
     public GameObject HullPrefab;
@@ -97,7 +97,7 @@ public class CardGenerator : MonoBehaviour
         pilot = data.pilot;
         autopilot = data.autopilot;
         aim = data.aim;
-        fireRate = data.fireRate;
+        shots = data.shots;
         speed = data.speed;
         shields = data.shields;
         hull = data.hull;
@@ -168,10 +168,10 @@ public class CardGenerator : MonoBehaviour
                 stat.transform.position = pos;
                 currentY -= decrement;
             }
-            //Fire Rate
-            for (int i = 0; i < fireRate; i++)
+            //Shots
+            for (int i = 0; i < shots; i++)
             {
-                GameObject stat = Instantiate(FireRatePrefab);
+                GameObject stat = Instantiate(ShotsPrefab);
                 Vector3 pos = stat.transform.position;
                 pos.y = currentY;
                 stat.transform.position = pos;
@@ -289,7 +289,7 @@ public class CardGenerator : MonoBehaviour
             pilot = false;
             autopilot = false;
             aim = 0;
-            fireRate = 0;
+            shots = 0;
             speed = 0;
             shields = 0;
             hull = 0;

@@ -21,8 +21,8 @@ MonoBehaviour:
 
     -Aim: Reveal X cards on attack.
 
-    -Fire
-    Rate: Take X shots on attack.
+    -Shots:
+    Take X shots on attack.
 
     -Speed: Add X space cards to a ship on defense.
     Space cards regenerate.
@@ -35,7 +35,7 @@ MonoBehaviour:
   pilot: 0
   autopilot: 0
   aim: 0
-  fireRate: 0
+  shots: 0
   speed: 0
   shields: 0
   hull: 0

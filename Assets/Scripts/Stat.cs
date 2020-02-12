@@ -5,7 +5,7 @@ using UnityEngine;
 public enum Stat
 {
     AIM,
-    FIRE_RATE,
+    SHOTS,
     SPEED,
     SHIELDS,
     HULL,

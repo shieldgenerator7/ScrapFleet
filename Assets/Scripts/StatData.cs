@@ -21,8 +21,8 @@ public class StatData : ScriptableObject
         {
             case Stat.AIM:
                 return card.aim;
-            case Stat.FIRE_RATE:
-                return card.fireRate;
+            case Stat.SHOTS:
+                return card.shots;
             case Stat.SPEED:
                 return card.speed;
             case Stat.SHIELDS:

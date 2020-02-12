@@ -18,12 +18,12 @@ MonoBehaviour:
   tags: []
   effect: Each shot of this ship's attack can target a different ship.
   count: 5
-  showText: 1
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 0
-  fireRate: 3
+  aim: 0
+  shots: 3
   speed: 0
   shields: 0
   hull: 0

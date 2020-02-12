@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Pilot_Ace_FireRate
+  m_Name: Pilot_Ace_Shots
   m_EditorClassIdentifier: 
-  name: Fire Rate Ace Pilot
+  name: Shots Ace Pilot
   portrait: {fileID: 21300000, guid: b8291733250c23e4db57f7245ddf96f8, type: 3}
   border: {fileID: 21300000, guid: 1604529651ada5f44a73bd8a424af486, type: 3}
   tags: []
@@ -22,8 +22,8 @@ MonoBehaviour:
   cardLayoutName: Component
   pilot: 1
   autopilot: 0
-  accuracy: 0
-  fireRate: 3
+  aim: 0
+  shots: 3
   speed: 0
   shields: 0
   hull: 5

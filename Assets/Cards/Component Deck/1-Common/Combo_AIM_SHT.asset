@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Combo_AIM_FRR
+  m_Name: Combo_AIM_SHT
   m_EditorClassIdentifier: 
   name: Sniper Laser
   portrait: {fileID: 21300000, guid: 9a44804375fcc444c94510745ec2baa6, type: 3}
@@ -23,7 +23,7 @@ MonoBehaviour:
   pilot: 0
   autopilot: 0
   aim: 1
-  fireRate: 1
+  shots: 1
   speed: 0
   shields: 0
   hull: 0

@@ -23,7 +23,7 @@ MonoBehaviour:
   pilot: 1
   autopilot: 0
   aim: 1
-  fireRate: 1
+  shots: 1
   speed: 0
   shields: 1
   hull: 5

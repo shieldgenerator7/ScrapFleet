@@ -22,8 +22,8 @@ MonoBehaviour:
   cardLayoutName: Component
   pilot: 1
   autopilot: 0
-  accuracy: 0
-  fireRate: 1
+  aim: 0
+  shots: 1
   speed: 2
   shields: 0
   hull: 5
