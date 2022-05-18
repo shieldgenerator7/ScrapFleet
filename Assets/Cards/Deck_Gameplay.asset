@@ -17,5 +17,6 @@ MonoBehaviour:
   cardLayoutName: Gameplay
   cards:
   - {fileID: 11400000, guid: 17a4e8cd4b6a3c74e88bbb10341ffd72, type: 2}
+  - {fileID: 11400000, guid: fc1f734b5d74efb419888b836d1962b8, type: 2}
   - {fileID: 11400000, guid: c472c45ad808a5c40b8699a998b85bcd, type: 2}
   - {fileID: 11400000, guid: 8648ac366f2036a42939d15170a923be, type: 2}

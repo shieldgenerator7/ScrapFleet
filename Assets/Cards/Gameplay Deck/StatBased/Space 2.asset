@@ -17,13 +17,13 @@ MonoBehaviour:
   border: {fileID: 21300000, guid: 05eab1d27ff7f664a83c3225447a2862, type: 3}
   tags: []
   effect: 
-  count: 50
+  count: 20
   autoGenerateStatDescriptionLevel: 0
   cardLayoutName: Gameplay
   pilot: 0
   autopilot: 0
-  accuracy: 0
-  fireRate: 0
+  aim: 0
+  shots: 0
   speed: 0
   shields: 0
   hull: 0

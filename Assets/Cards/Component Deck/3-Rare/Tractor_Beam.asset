@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf7e46b59847a4fa4b11a0b3d5c08d, type: 3}
-  m_Name: Rare_Earth_Magnet
+  m_Name: Tractor_Beam
   m_EditorClassIdentifier: 
-  name: Rare Earth Magnet
+  name: Tractor Beam
   portrait: {fileID: 21300000, guid: c75f7ae261531a84a8882855c0c08d93, type: 3}
   border: {fileID: 0}
   tags: []
-  effect: When this ship destroys a component, the component goes to your scrap pile
-    instead of the discard pile.
+  effect: Once per turn, when a component on a ship is destroyed, you may have the
+    component go to your scrap pile instead of the discard pile.
   count: 5
-  showText: 1
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 0
-  fireRate: 0
+  aim: 0
+  shots: 0
   speed: 0
   shields: 0
   hull: 1

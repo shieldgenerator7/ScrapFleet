@@ -16,8 +16,8 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: c75f7ae261531a84a8882855c0c08d93, type: 3}
   border: {fileID: 0}
   tags: []
-  effect: Forfeit your turn to install a component from your scrap pile onto this
-    ship.
+  effect: Once per turn, you may install a component from your scrap pile onto a
+    ship, and regenerate its shields. You may activate this even during an attack.
   count: 5
   autoGenerateStatDescriptionLevel: 0
   cardLayoutName: 
