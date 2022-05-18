@@ -21,12 +21,12 @@ MonoBehaviour:
     be destroyed during this attack, but can still contribute to the ship's speed
     stat.
   count: 5
-  showText: 1
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 0
-  fireRate: 0
+  aim: 0
+  shots: 0
   speed: 3
   shields: 0
   hull: 0

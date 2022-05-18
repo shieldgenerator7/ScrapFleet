@@ -19,12 +19,12 @@ MonoBehaviour:
   effect: Forfeit your turn to install a component from your scrap pile onto this
     ship.
   count: 5
-  showText: 1
   autoGenerateStatDescriptionLevel: 0
+  cardLayoutName: 
   pilot: 0
   autopilot: 0
-  accuracy: 0
-  fireRate: 0
+  aim: 0
+  shots: 0
   speed: 0
   shields: 0
   hull: 3
