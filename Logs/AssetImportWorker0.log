@@ -713,3 +713,105 @@ Received Import Request.
   path: Assets/SVGs/border2.svg
   artifactKey: Guid(0ba8ab7f33a979049ae715097f111c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/SVGs/border2.svg using Guid(0ba8ab7f33a979049ae715097f111c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fa4f9f6aeea562b4e24e2dd56d442d') in 0.065826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 247.654051 seconds.
+  path: Assets/Cards/Component Deck/3-Rare/Afterburners.asset
+  artifactKey: Guid(b45c676c14567954d9cb2dc36fcb416c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/3-Rare/Afterburners.asset using Guid(b45c676c14567954d9cb2dc36fcb416c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded8593cbcadca086b0a1a5cebff6da3') in 0.029975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 510.300231 seconds.
+  path: Assets/SVGs/Optimized-SPD.png
+  artifactKey: Guid(0884af578e361e24db721e4625837b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVGs/Optimized-SPD.png using Guid(0884af578e361e24db721e4625837b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc4ff2005902f77ec58befa5fa4b69b') in 0.167382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.722288 seconds.
+  path: Assets/SVGs/Optimized-SPD.svg
+  artifactKey: Guid(88911b3131b9cdf4c9c239598a32962d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVGs/Optimized-SPD.svg using Guid(88911b3131b9cdf4c9c239598a32962d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5211643351cdd18f08e9d7d3340df5') in 0.094325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 191.517104 seconds.
+  path: Assets/Cards/Component Deck/1-Common/Combo_SPD_SHD.asset
+  artifactKey: Guid(554015ba40b48f0479538e72de8e150b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/1-Common/Combo_SPD_SHD.asset using Guid(554015ba40b48f0479538e72de8e150b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0022a4e76f19ef384c10bf8dfd6ea608') in 0.150286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3495.760480 seconds.
+  path: Assets/Cards/Gameplay Deck/StatBased/Shield 1.asset
+  artifactKey: Guid(fc1f734b5d74efb419888b836d1962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Gameplay Deck/StatBased/Shield 1.asset using Guid(fc1f734b5d74efb419888b836d1962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843a5832b5aee3b06c752453769a39a8') in 0.077546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.990569 seconds.
+  path: Assets/Cards/Gameplay Deck/StatBased/Shield 2.asset
+  artifactKey: Guid(fc1f734b5d74efb419888b836d1962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Gameplay Deck/StatBased/Shield 2.asset using Guid(fc1f734b5d74efb419888b836d1962b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012404a1a22641de993f71b9da939728') in 0.016478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 902.664956 seconds.
+  path: Assets/Cards/Component Deck/1-Common/Optimized_Aim.asset
+  artifactKey: Guid(ffb9420f1a767dd4ba000f1d0604add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/1-Common/Optimized_Aim.asset using Guid(ffb9420f1a767dd4ba000f1d0604add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee571562ffde5fa72917bffa2bdfe435') in 0.080785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.014012 seconds.
+  path: Assets/Cards/Component Deck/1-Common/Optimized_Shots.asset
+  artifactKey: Guid(ac464faac65519846932b8296917586d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/1-Common/Optimized_Shots.asset using Guid(ac464faac65519846932b8296917586d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174ddbd811f5ca20974ef891a9693c2d') in 0.031883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.470907 seconds.
+  path: Assets/Cards/Component Deck/1-Common/Optimized_Speed.asset
+  artifactKey: Guid(cad8a1802bee89f48b22f6c93ee3b237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/1-Common/Optimized_Speed.asset using Guid(cad8a1802bee89f48b22f6c93ee3b237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d75c423b78c9cd0d3a21841a81f90e') in 0.017768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.337882 seconds.
+  path: Assets/Cards/Component Deck/0-Pilots/Pilot_Jack_No_Shields.asset
+  artifactKey: Guid(71d180ba6115d934099270131ff78254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/0-Pilots/Pilot_Jack_No_Shields.asset using Guid(71d180ba6115d934099270131ff78254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b2591139727609e73d07a837dd4815') in 0.032340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.511337 seconds.
+  path: Assets/Cards/Component Deck/0-Pilots/Pilot_Jack_No_Shots.asset
+  artifactKey: Guid(ee439002200e0744c94677f3e92f51bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/0-Pilots/Pilot_Jack_No_Shots.asset using Guid(ee439002200e0744c94677f3e92f51bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3364a86e2bb8be605e795615e95ca93f') in 0.017846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.401548 seconds.
+  path: Assets/Cards/Component Deck/0-Pilots/Pilot_Master_Aim.asset
+  artifactKey: Guid(93cb49685ad38e54aa03d3274ef28cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/0-Pilots/Pilot_Master_Aim.asset using Guid(93cb49685ad38e54aa03d3274ef28cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9875e392eb9ccd6e79236715d01df96f') in 0.074605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.227543 seconds.
+  path: Assets/Cards/Component Deck/0-Pilots/Pilot_Master_Shots.asset
+  artifactKey: Guid(db30018c7c987b5478455eb5b5f01353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/0-Pilots/Pilot_Master_Shots.asset using Guid(db30018c7c987b5478455eb5b5f01353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a56f4673d9dd0dc0decc738ee55214') in 0.026123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.521402 seconds.
+  path: Assets/Cards/Component Deck/0-Pilots/Pilot_Master_Speed.asset
+  artifactKey: Guid(656c9c981d26fbd41bb9b1ddc7886275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cards/Component Deck/0-Pilots/Pilot_Master_Speed.asset using Guid(656c9c981d26fbd41bb9b1ddc7886275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d158422396d48c4982f8bee402226bc') in 0.015005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 303.479983 seconds.
+  path: Assets/SVGs/Shots.png
+  artifactKey: Guid(1b7c14c830cde734e8be6788b3f37398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVGs/Shots.png using Guid(1b7c14c830cde734e8be6788b3f37398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33359dd440c69ff612b23eb3f34a92df') in 0.240747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.819596 seconds.
+  path: Assets/SVGs/aim.png
+  artifactKey: Guid(a13f52738daadf242965a64d1892025f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVGs/aim.png using Guid(a13f52738daadf242965a64d1892025f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01506dcae810078de258a225453baa73') in 0.036912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.412851 seconds.
+  path: Assets/SVGs/Shots.svg
+  artifactKey: Guid(618a20b0b02981b42b487a6a6b911c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SVGs/Shots.svg using Guid(618a20b0b02981b42b487a6a6b911c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0848b5b0709dfb9177b588419154654') in 0.114795 seconds 
