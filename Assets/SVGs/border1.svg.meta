@@ -35,6 +35,7 @@ ScriptedImporter:
   filterMode: 1
   sampleCount: 8
   preserveSVGImageAspect: 0
+  useSVGPixelsPerUnit: 0
   spriteData:
     TessellationDetail: 0
     SpriteRect:
@@ -50,5 +51,4 @@ ScriptedImporter:
         width: 156
         height: 232
       spriteID: d871b13bc9c26b34f87087c46bec275d
-      internalID: 0
     PhysicsOutlines: []
