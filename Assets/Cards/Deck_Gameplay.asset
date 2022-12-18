@@ -16,6 +16,7 @@ MonoBehaviour:
   cardBack: {fileID: 21300000, guid: 7054d5169a9cab842a1c0b24448c8b93, type: 3}
   cardLayoutName: Gameplay
   cards:
+  - {fileID: 11400000, guid: 9a9739a3a9909a844a23c5ec1266a24e, type: 2}
   - {fileID: 11400000, guid: 17a4e8cd4b6a3c74e88bbb10341ffd72, type: 2}
   - {fileID: 11400000, guid: fc1f734b5d74efb419888b836d1962b8, type: 2}
   - {fileID: 11400000, guid: c472c45ad808a5c40b8699a998b85bcd, type: 2}
